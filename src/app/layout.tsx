@@ -3,16 +3,16 @@ import "./globals.css";
 import ThemeToggle from "@/components/ThemeToggle";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vertaile.fi"),
-  title: "Vertaile — Vertaa hintoja ja löydä paras sopimus",
+  metadataBase: new URL("https://valitse.fi"),
+  title: "Valitse — Vertaile ja valitse paras sopimus",
   description:
-    "Suomen kattavin vertailupalvelu. Vertaa sähkö-, vakuutus-, laina-, puhelin- ja laajakaistasopimuksia yhdestä paikasta.",
+    "Puolueeton suomalainen vertailupalvelu. Vertaa sahko-, vakuutus-, laina- ja puhelinliittymasopimuksia yhdesta paikasta. Aina ilmainen.",
   openGraph: {
-    title: "Vertaile — Vertaa hintoja ja löydä paras sopimus",
+    title: "Valitse — Vertaile ja valitse paras sopimus",
     description:
-      "Suomen kattavin vertailupalvelu. Vertaa sähkö-, vakuutus-, laina-, puhelin- ja laajakaistasopimuksia yhdestä paikasta.",
-    url: "https://vertaile.fi",
-    siteName: "Vertaile",
+      "Puolueeton suomalainen vertailupalvelu. Vertaa sahko-, vakuutus-, laina- ja puhelinliittymasopimuksia yhdesta paikasta.",
+    url: "https://valitse.fi",
+    siteName: "Valitse",
     locale: "fi_FI",
     type: "website",
     images: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Vertaile — Vertaa ja säästä",
+        alt: "Valitse — Vertaile ja valitse",
       },
     ],
   },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://vertaile.fi",
+    canonical: "https://valitse.fi",
   },
 };
 
@@ -41,10 +41,10 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Vertaile",
-    url: "https://vertaile.fi",
+    name: "Valitse",
+    url: "https://valitse.fi",
     description:
-      "Suomen kattavin vertailupalvelu. Vertaa sähkö-, vakuutus-, laina-, puhelin- ja laajakaistasopimuksia yhdestä paikasta.",
+      "Puolueeton suomalainen vertailupalvelu. Vertaa sahko-, vakuutus-, laina- ja puhelinliittymasopimuksia yhdesta paikasta.",
   };
 
   return (

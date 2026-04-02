@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vertaile.fi/sitemap.xml
+Sitemap: https://valitse.fi/sitemap.xml

@@ -7,6 +7,7 @@ export interface Vertical {
   icon: string;
   color: string;
   live: boolean;
+  core: boolean;
   keywords: string[];
 }
 
@@ -16,10 +17,11 @@ export const verticals: Vertical[] = [
     name: "Sähkövertailu",
     shortName: "Sähkö",
     description: "Vertaa sähkösopimuksia ja löydä edullisin sähkö.",
-    url: "https://energiavertailu.fi",
+    url: "https://energiavertailu.vercel.app",
     icon: "⚡",
     color: "#f59e0b",
-    live: false,
+    live: true,
+    core: true,
     keywords: [
       "sähkö",
       "sähkösopimus",
@@ -47,10 +49,11 @@ export const verticals: Vertical[] = [
     name: "Vakuutusvertailu",
     shortName: "Vakuutukset",
     description: "Vertaa vakuutuksia ja säästä vakuutusmaksuissa.",
-    url: "https://vakuutusvertailu.fi",
+    url: "https://vakuutusvertailu.vercel.app",
     icon: "🛡️",
     color: "#3b82f6",
-    live: false,
+    live: true,
+    core: true,
     keywords: [
       "vakuutus",
       "vakuutukset",
@@ -81,10 +84,11 @@ export const verticals: Vertical[] = [
     name: "Lainavertailu",
     shortName: "Lainat",
     description: "Vertaa lainoja ja löydä paras korko.",
-    url: "https://lainavertailu.fi",
+    url: "https://lainavertailu-delta.vercel.app",
     icon: "💰",
     color: "#10b981",
-    live: false,
+    live: true,
+    core: true,
     keywords: [
       "laina",
       "lainat",
@@ -114,10 +118,11 @@ export const verticals: Vertical[] = [
     name: "Puhelinvertailu",
     shortName: "Liittymät",
     description: "Vertaa puhelinliittymiä ja laajakaistoja.",
-    url: "https://puhelinvertailu.fi",
+    url: "https://puhelinvertailu.vercel.app",
     icon: "📱",
     color: "#8b5cf6",
-    live: false,
+    live: true,
+    core: true,
     keywords: [
       "puhelinliittymä",
       "liittymä",
@@ -153,6 +158,7 @@ export const verticals: Vertical[] = [
     icon: "🏠",
     color: "#ef4444",
     live: true,
+    core: false,
     keywords: [
       "asunto",
       "asunnot",
@@ -183,6 +189,7 @@ export const verticals: Vertical[] = [
     icon: "🏷️",
     color: "#f97316",
     live: true,
+    core: false,
     keywords: [
       "tarjous",
       "tarjoukset",
@@ -210,6 +217,7 @@ export const verticals: Vertical[] = [
     icon: "⚖️",
     color: "#6366f1",
     live: true,
+    core: false,
     keywords: [
       "avioehto",
       "testamentti",
@@ -238,6 +246,7 @@ export const verticals: Vertical[] = [
     icon: "🔧",
     color: "#14b8a6",
     live: true,
+    core: false,
     keywords: [
       "remontti",
       "putkimies",
@@ -267,6 +276,7 @@ export const verticals: Vertical[] = [
     icon: "📊",
     color: "#0ea5e9",
     live: true,
+    core: false,
     keywords: [
       "sijoitus",
       "sijoittaminen",

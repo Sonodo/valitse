@@ -36,10 +36,13 @@ export default function SearchBar() {
       <div
         className={`relative flex items-center rounded-full border-2 transition-all duration-200 bg-[var(--color-background)] ${
           isFocused
-            ? "border-blue-500 shadow-lg shadow-blue-500/10"
+            ? "border-[var(--color-brand)] shadow-lg shadow-blue-500/10"
             : "border-[var(--color-border)] shadow-md hover:shadow-lg"
         }`}
       >
+        <div className="pl-5 opacity-40">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </div>
         <input
           ref={inputRef}
           type="text"
@@ -47,70 +50,42 @@ export default function SearchBar() {
           onChange={(e) => handleSearch(e.target.value)}
           onFocus={() => setIsFocused(true)}
           onBlur={() => setTimeout(() => setIsFocused(false), 200)}
-          placeholder="Mitä haluat vertailla?"
-          className="search-input w-full px-6 py-4 text-lg rounded-full bg-transparent placeholder:text-[var(--color-muted)]"
+          placeholder="Etsi vertailua — sähkö, laina, vakuutus..."
+          className="search-input w-full px-4 py-4 text-lg rounded-full bg-transparent placeholder:text-[var(--color-muted)]"
           autoComplete="off"
         />
-        <div className="pr-4 opacity-50">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-        </div>
       </div>
 
       {/* Search results dropdown */}
       {results.length > 0 && query.trim() && (
         <div className="absolute top-full left-0 right-0 mt-2 bg-[var(--color-background)] border border-[var(--color-border)] rounded-2xl shadow-xl overflow-hidden z-40">
-          {results.map((result, index) =>
-            result.vertical.live ? (
-              <a
-                key={result.vertical.id}
-                href={result.vertical.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`result-enter flex items-center gap-4 px-5 py-4 hover:bg-[var(--color-surface)] transition-colors ${
-                  index < results.length - 1 ? "border-b border-[var(--color-border)]" : ""
-                }`}
-                style={{ animationDelay: `${index * 50}ms` }}
-              >
-                <span className="text-2xl flex-shrink-0" style={{ filter: "none" }}>
-                  {result.vertical.icon}
-                </span>
-                <div className="flex-1 min-w-0">
-                  <div className="font-semibold text-[var(--color-foreground)]">
-                    {result.vertical.name}
-                  </div>
-                  <div className="text-sm text-[var(--color-muted)] truncate">
-                    {result.vertical.description}
-                  </div>
+          {results.map((result, index) => (
+            <a
+              key={result.vertical.id}
+              href={result.vertical.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`result-enter flex items-center gap-4 px-5 py-4 hover:bg-[var(--color-surface)] transition-colors ${
+                index < results.length - 1 ? "border-b border-[var(--color-border)]" : ""
+              }`}
+              style={{ animationDelay: `${index * 50}ms` }}
+            >
+              <span className="text-2xl flex-shrink-0">
+                {result.vertical.icon}
+              </span>
+              <div className="flex-1 min-w-0">
+                <div className="font-semibold text-[var(--color-foreground)]">
+                  {result.vertical.name}
                 </div>
-                <span className="text-sm text-blue-500 font-medium whitespace-nowrap flex-shrink-0">
-                  Siirry vertailuun &rarr;
-                </span>
-              </a>
-            ) : (
-              <div
-                key={result.vertical.id}
-                className={`result-enter flex items-center gap-4 px-5 py-4 ${
-                  index < results.length - 1 ? "border-b border-[var(--color-border)]" : ""
-                }`}
-                style={{ animationDelay: `${index * 50}ms` }}
-              >
-                <span className="text-2xl flex-shrink-0 opacity-60" style={{ filter: "none" }}>
-                  {result.vertical.icon}
-                </span>
-                <div className="flex-1 min-w-0">
-                  <div className="font-semibold text-[var(--color-foreground)] opacity-60">
-                    {result.vertical.name}
-                  </div>
-                  <div className="text-sm text-[var(--color-muted)] truncate">
-                    {result.vertical.description}
-                  </div>
+                <div className="text-sm text-[var(--color-muted)] truncate">
+                  {result.vertical.description}
                 </div>
-                <span className="text-xs bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400 px-2 py-0.5 rounded-full flex-shrink-0">
-                  Tulossa pian
-                </span>
               </div>
-            )
-          )}
+              <span className="text-sm text-[var(--color-brand)] font-medium whitespace-nowrap flex-shrink-0">
+                Siirry &rarr;
+              </span>
+            </a>
+          ))}
         </div>
       )}
 

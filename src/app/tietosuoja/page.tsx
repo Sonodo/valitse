@@ -3,36 +3,36 @@ import Link from "next/link";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Tietosuojaseloste — Vertaile",
-  description: "Vertaile.fi tietosuojaseloste. Lue miten käsittelemme henkilötietoja.",
+  title: "Tietosuojaseloste — Valitse",
+  description: "Valitse.fi tietosuojaseloste. Lue miten käsittelemme henkilötietoja.",
 };
 
 export default function TietosuojaPage() {
   return (
     <main className="flex-1 flex flex-col">
       <div className="max-w-2xl mx-auto px-4 py-16 flex-1">
-        <Link href="/" className="text-blue-500 hover:text-blue-600 text-sm mb-8 inline-block">
+        <Link href="/" className="text-[var(--color-brand)] hover:opacity-80 text-sm mb-8 inline-block">
           &larr; Takaisin etusivulle
         </Link>
 
         <h1 className="text-3xl font-bold mb-6 text-[var(--color-foreground)]">Tietosuojaseloste</h1>
 
         <div className="space-y-6 text-[var(--color-foreground)] leading-relaxed text-sm">
-          <p className="text-[var(--color-muted)]">Päivitetty: 29.3.2026</p>
+          <p className="text-[var(--color-muted)]">Päivitetty: 2.4.2026</p>
 
           <section>
             <h2 className="text-lg font-semibold mb-2">1. Rekisterinpitäjä</h2>
             <p>
               Sonodo — Henri Linnainmaa<br />
               Helsinki, Suomi<br />
-              Sähköposti: info@vertaile.fi
+              Sähköposti: info@valitse.fi
             </p>
           </section>
 
           <section>
             <h2 className="text-lg font-semibold mb-2">2. Kerättävät tiedot</h2>
             <p>
-              Vertaile.fi toimii pääosin staattisesti. Hakutoiminto toimii kokonaan selaimessa
+              Valitse.fi toimii pääosin staattisesti. Hakutoiminto toimii kokonaan selaimessa
               eikä lähetä tietoja palvelimelle. Sivusto saattaa käyttää analytiikkapalveluita
               kävijäliikenteen ymmärtämiseksi. Mahdolliset evästeet kerrotaan erikseen
               evästebannerin yhteydessä.
@@ -52,7 +52,7 @@ export default function TietosuojaPage() {
           <section>
             <h2 className="text-lg font-semibold mb-2">4. Ulkoiset linkit</h2>
             <p>
-              Vertaile.fi sisältää linkkejä ulkoisiin vertailusivustoihin. Emme vastaa näiden
+              Valitse.fi sisältää linkkejä ulkoisiin vertailusivustoihin. Emme vastaa näiden
               sivustojen tietosuojakäytännöistä. Suosittelemme tutustumaan kunkin palvelun omaan
               tietosuojaselosteeseen.
             </p>
@@ -72,7 +72,7 @@ export default function TietosuojaPage() {
             <p>
               Sinulla on oikeus pyytää pääsy tietoihisi, oikaista niitä, pyytää niiden
               poistamista sekä rajoittaa niiden käsittelyä. Voit käyttää oikeuksiasi
-              ottamalla yhteyttä: info@vertaile.fi
+              ottamalla yhteyttä: info@valitse.fi
             </p>
           </section>
 
@@ -87,7 +87,7 @@ export default function TietosuojaPage() {
           <section>
             <h2 className="text-lg font-semibold mb-2">8. Yhteystiedot</h2>
             <p>
-              Tietosuojaa koskevissa kysymyksissä voit ottaa yhteyttä: info@vertaile.fi
+              Tietosuojaa koskevissa kysymyksissä voit ottaa yhteyttä: info@valitse.fi
             </p>
           </section>
         </div>

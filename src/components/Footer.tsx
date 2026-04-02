@@ -5,22 +5,22 @@ export default function Footer() {
     <footer className="py-8 text-center text-sm text-[var(--color-muted)]">
       <div className="flex items-center justify-center gap-4 flex-wrap">
         <Link href="/tietoa" className="hover:text-[var(--color-foreground)] transition-colors">
-          Tietoa
+          Tietoa Valitsesta
         </Link>
-        <span className="opacity-30">·</span>
+        <span className="opacity-30">&middot;</span>
+        <Link href="/miten-toimimme" className="hover:text-[var(--color-foreground)] transition-colors">
+          Miten toimimme
+        </Link>
+        <span className="opacity-30">&middot;</span>
         <Link href="/tietosuoja" className="hover:text-[var(--color-foreground)] transition-colors">
           Tietosuoja
         </Link>
-        <span className="opacity-30">·</span>
+        <span className="opacity-30">&middot;</span>
         <Link href="/kayttoehdot" className="hover:text-[var(--color-foreground)] transition-colors">
           Käyttöehdot
         </Link>
-        <span className="opacity-30">·</span>
-        <Link href="/sivukartta" className="hover:text-[var(--color-foreground)] transition-colors">
-          Sivukartta
-        </Link>
       </div>
-      <p className="mt-3 opacity-70">&copy; 2026 Vertaile</p>
+      <p className="mt-3 opacity-70">&copy; 2026 Valitse — Sonodo</p>
     </footer>
   );
 }
