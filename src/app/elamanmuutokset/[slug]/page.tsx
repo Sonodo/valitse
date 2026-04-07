@@ -49,7 +49,7 @@ export default async function LifeEventPage({
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Etusivu', url: '/' },
-    { name: 'Elamanmuutokset', url: '/elamanmuutokset' },
+    { name: 'Elämänmuutokset', url: '/elamanmuutokset' },
     { name: event.name },
   ]);
 
@@ -88,7 +88,7 @@ export default async function LifeEventPage({
           <li aria-hidden="true">/</li>
           <li>
             <Link href="/elamanmuutokset" className="transition-colors hover:text-[#0891B2]">
-              Elamanmuutokset
+              Elämänmuutokset
             </Link>
           </li>
           <li aria-hidden="true">/</li>

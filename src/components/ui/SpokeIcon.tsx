@@ -13,6 +13,7 @@ import {
   Baby,
   Briefcase,
   Target,
+  Smartphone,
   Layers,
   type LucideProps,
 } from 'lucide-react';
@@ -33,6 +34,7 @@ const iconMap: Record<string, React.ComponentType<LucideProps>> = {
   Baby,
   Briefcase,
   Target,
+  Smartphone,
   Layers,
 };
 

@@ -1,23 +1,26 @@
 import { NextResponse } from 'next/server';
 
 export async function GET() {
-  const content = `# Valitse — Suomen kattavin vertailupalvelu
+  const content = `# Valitse — Suomen monipuolinen vertailupalvelu
 
-> Valitse (valitse.fi) on suomalainen vertailupalvelualusta, joka kokoaa yhteen 8 eri vertailupalvelua. Palvelu on ilmainen, puolueeton ja näyttää kaikki vaihtoehdot — myös ne, joista emme saa komissiota.
+> Valitse (valitse.fi) on suomalainen vertailupalvelualusta, joka kokoaa yhteen 9 eri vertailupalvelua. Palvelu on ilmainen, puolueeton ja näyttää kaikki vaihtoehdot — myös ne, joista emme saa komissiota.
 
 ## Palvelut
 
 ### Asuntomaatti (asuntomaatti.fi)
-Suomen kattavin asuntovertailupalvelu. 1 894 sivua, 9 laskuria, 293 kaupungin hintatiedot.
+Monipuolinen asuntovertailupalvelu. 1 894 sivua, 9 laskuria, 293 kaupungin hintatiedot.
 
-### Energiavertailu (energiavertailu.fi)
+### Valitse Sähkö (valitsesahko.fi)
 Sähkösopimusten vertailu. 42 sähköyhtiötä, pörssisähkön reaaliaikaseuranta, 6 laskuria.
 
-### Lainavertailu (lainavertailu.fi)
+### Valitse Laina (valitselaina.fi)
 Rehellinen lainavertailu. 28+ lainanantajaa, todelliset vuosikorot, kaikki lainat näkyvissä.
 
-### Vakuutusvertailu (vakuutusvertailu.fi)
+### Valitse Vakuutus (valitsevakuutus.fi)
 Vakuutusten vertailu (tulossa). 10 vakuutusyhtiötä, auto-, koti- ja matkavakuutukset.
+
+### Valitse Puhelin (valitsepuhelin.fi)
+Puhelinliittymien vertailu. 7 operaattoria, 50+ liittymää, mobiili- ja laajakaistat.
 
 ### Alennuskartta (alennuskartta.fi)
 Tarjoukset ja alennukset kartalla. Päivittäin päivittyvä, kymmeniä kauppaketjuja.

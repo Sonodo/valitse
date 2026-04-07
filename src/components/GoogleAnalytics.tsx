@@ -18,6 +18,17 @@ export function GoogleAnalytics() {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
+          gtag('consent', 'default', {
+            'analytics_storage': 'denied',
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied'
+          });
+          if (typeof localStorage !== 'undefined' && localStorage.getItem('analytics_consent') === 'granted') {
+            gtag('consent', 'update', {
+              'analytics_storage': 'granted'
+            });
+          }
           gtag('config', '${GA_ID}', {
             page_path: window.location.pathname,
           });

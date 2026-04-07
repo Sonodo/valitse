@@ -106,7 +106,7 @@ export const verticalContent: VerticalContent[] = [
       { step: 3, title: 'Pyydä tarjous', description: 'Lähetä tarjouspyyntö suoraan yrityksille tai soita heille. Hyödynnä kotitalousvähennys.' },
     ],
     detailedFeatures: [
-      { title: '1 800+ yritystä', description: 'Suomen kattavin kotipalveluyritysten hakemisto. Remonttifirmat, siivoojat, putkimiehet, sähköasentajat ja muut.' },
+      { title: '1 800+ yritystä', description: 'Laaja kotipalveluyritysten hakemisto. Remonttifirmat, siivoojat, putkimiehet, sähköasentajat ja muut.' },
       { title: 'Aidot arvostelut', description: 'Yli 5 700 arvostelua todellisilta asiakkailta. Lue kokemuksia ennen palveluntarjoajan valintaa.' },
       { title: '9 palvelukategoriaa', description: 'Remontti, siivous, putkityöt, sähkötyöt, maalaus, muutto, pihatyöt, LVI ja yleispalvelut.' },
       { title: 'Kotitalousvähennysopas', description: 'Kattava opas kotitalousvähennykseen. Selvitä, kuinka paljon voit säästää veroissa kotipalveluista.' },

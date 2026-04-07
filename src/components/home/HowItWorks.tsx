@@ -20,7 +20,7 @@ const steps = [
     icon: PiggyBank,
     title: 'Säästä rahaa',
     description:
-      'Valitse paras vaihtoehto ja säästä jopa satoja euroja vuodessa.',
+      'Valitse sopivin vaihtoehto ja säästä jopa satoja euroja vuodessa.',
   },
 ];
 

@@ -78,7 +78,7 @@ export default function Image() {
           <span>·</span>
           <span>Vakuutukset</span>
           <span>·</span>
-          <span>Telecom</span>
+          <span>Puhelinliittymät</span>
           <span>·</span>
           <span>Asunnot</span>
         </div>

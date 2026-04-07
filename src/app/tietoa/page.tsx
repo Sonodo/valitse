@@ -10,7 +10,7 @@ import Breadcrumbs from '@/components/layout/Breadcrumbs';
 export const metadata: Metadata = {
   title: `Tietoa Valitsesta — ${SITE_NAME}`,
   description:
-    'Valitse on Suomen kattavin vertailupalvelu. Autamme suomalaisia tekemään parempia päätöksiä läpinäkyvällä ja puolueettomalla vertailutiedolla.',
+    'Valitse on monipuolinen suomalainen vertailupalvelu. Autamme suomalaisia tekemään parempia päätöksiä läpinäkyvällä ja puolueettomalla vertailutiedolla.',
   alternates: { canonical: `${SITE_URL}/tietoa` },
 };
 
@@ -25,7 +25,7 @@ const values = [
     icon: Globe,
     title: 'Kattava',
     description:
-      'Kahdeksan eri vertailupalvelua kattaa suomalaisen arjen tärkeimmät osa-alueet: asumisen, energian, lainat, vakuutukset, tarjoukset, kotipalvelut, lakiasiat ja talouden hallinnan.',
+      'Yhdeksän eri vertailupalvelua kattaa suomalaisen arjen tärkeimmät osa-alueet: asumisen, energian, lainat, vakuutukset, puhelinliittymät, tarjoukset, kotipalvelut, lakiasiat ja talouden hallinnan.',
   },
   {
     icon: Users,

@@ -38,7 +38,7 @@ export default function HeroSection() {
           {/* Badge */}
           <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium text-slate-200 backdrop-blur-sm">
             <Sparkles className="h-4 w-4 text-[#F59E0B]" />
-            Suomen kattavin vertailupalvelu
+            Suomen monipuolinen vertailupalvelu
           </div>
 
           {/* Heading */}

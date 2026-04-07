@@ -47,7 +47,7 @@ export const lifeEvents: LifeEvent[] = [
       'Kilpailuta asuntolaina vähintään 3 pankista.',
       'Käytä asuntomaatin hinta-arviota neuvotteluvalttina.',
       'Avioehto kannattaa tehdä ennen asunnon ostoa.',
-      'Muista varainsiirtovero (2 % asunto-osakkeista, 3 % kiinteistöistä). Ensiasunnon ostaja on vapautettu.',
+      'Muista varainsiirtovero (1,5 % asunto-osakkeista, 3 % kiinteistöistä). Ensiasunnon ostaja on vapautettu.',
       'Tarkista taloyhtiön kunto ja tuleva remonttitarve.',
     ],
   },

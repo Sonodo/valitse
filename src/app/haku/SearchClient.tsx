@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { Search, ArrowRight, X } from 'lucide-react';
 import { spokes } from '@/data/spokes';
 import { lifeEvents } from '@/data/life-events';
+import { blogPosts } from '@/data/blog-posts';
 import SpokeIcon from '@/components/ui/SpokeIcon';
 import Badge from '@/components/ui/Badge';
 import { cn } from '@/lib/utils';
@@ -70,7 +71,19 @@ export default function SearchClient() {
     });
   }, [normalizedQuery, activeCategory]);
 
-  const hasResults = filteredSpokes.length > 0 || filteredLifeEvents.length > 0;
+  // Filter blog posts
+  const filteredBlogPosts = useMemo(() => {
+    if (activeCategory !== 'Kaikki') return [];
+
+    if (!normalizedQuery) return blogPosts;
+
+    return blogPosts.filter((post) => {
+      const searchable = [post.title, post.description, ...post.tags].join(' ');
+      return normalize(searchable).includes(normalizedQuery);
+    });
+  }, [normalizedQuery, activeCategory]);
+
+  const hasResults = filteredSpokes.length > 0 || filteredLifeEvents.length > 0 || filteredBlogPosts.length > 0;
   const isSearching = normalizedQuery.length > 0;
 
   const updateUrl = useCallback(
@@ -225,9 +238,9 @@ export default function SearchClient() {
 
             {/* Life events results */}
             {filteredLifeEvents.length > 0 && (
-              <div>
+              <div className="mb-12">
                 <h2 className="mb-6 text-xl font-bold text-slate-900">
-                  Elamanmuutokset
+                  Elämänmuutokset
                   {isSearching && (
                     <span className="ml-2 text-base font-normal text-slate-500">
                       ({filteredLifeEvents.length})
@@ -259,6 +272,46 @@ export default function SearchClient() {
                         </span>
                         <span className="flex items-center gap-1 text-sm font-semibold text-[#0891B2] transition-colors group-hover:text-[#0891B2]/80">
                           Aloita
+                          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                        </span>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Blog post results */}
+            {filteredBlogPosts.length > 0 && (
+              <div>
+                <h2 className="mb-6 text-xl font-bold text-slate-900">
+                  Artikkelit
+                  {isSearching && (
+                    <span className="ml-2 text-base font-normal text-slate-500">
+                      ({filteredBlogPosts.length})
+                    </span>
+                  )}
+                </h2>
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  {filteredBlogPosts.map((post) => (
+                    <Link
+                      key={post.slug}
+                      href={`/blogi/${post.slug}`}
+                      className="card-hover-lift group flex flex-col rounded-xl border border-slate-200 bg-white p-5 shadow-sm"
+                    >
+                      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-cyan-50">
+                        <svg className="h-5 w-5 text-[#0891B2]" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                        </svg>
+                      </div>
+                      <h3 className="font-bold text-slate-900">{post.title}</h3>
+                      <p className="mt-1 flex-1 text-sm text-slate-600">{post.description}</p>
+                      <div className="mt-3 flex items-center justify-between">
+                        <span className="text-xs font-medium text-slate-500">
+                          {new Date(post.publishedAt).toLocaleDateString('fi-FI')}
+                        </span>
+                        <span className="flex items-center gap-1 text-sm font-semibold text-[#0891B2] transition-colors group-hover:text-[#0891B2]/80">
+                          Lue
                           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                         </span>
                       </div>

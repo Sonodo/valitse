@@ -7,7 +7,7 @@ import { generateBreadcrumbSchema } from '@/lib/seo';
 import SpokeIcon from '@/components/ui/SpokeIcon';
 
 export const metadata: Metadata = {
-  title: 'Elamanmuutokset',
+  title: 'Elämänmuutokset',
   description:
     'Suuri muutos edessä? Valitse opastaa sinut läpi kaikki tarvittavat palvelut — muutto, ensiasunto, perheenlisäys ja muut elämäntapahtumat.',
   alternates: { canonical: `${SITE_URL}/elamanmuutokset` },
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function ElamanmuutoksetPage() {
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Etusivu', url: '/' },
-    { name: 'Elamanmuutokset' },
+    { name: 'Elämänmuutokset' },
   ]);
 
   return (
@@ -35,7 +35,7 @@ export default function ElamanmuutoksetPage() {
             </Link>
           </li>
           <li aria-hidden="true">/</li>
-          <li className="font-medium text-slate-900">Elamanmuutokset</li>
+          <li className="font-medium text-slate-900">Elämänmuutokset</li>
         </ol>
       </nav>
 
@@ -46,7 +46,7 @@ export default function ElamanmuutoksetPage() {
             <Compass className="h-8 w-8 text-[#0891B2]" />
           </div>
           <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
-            Elamanmuutokset
+            Elämänmuutokset
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-slate-600">
             Suuri muutos edessä? Valitse opastaa sinut läpi kaikki tarvittavat palvelut.

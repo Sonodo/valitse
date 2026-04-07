@@ -20,7 +20,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-3 text-sm text-slate-400 leading-relaxed">
-              {SITE_TAGLINE}. Suomen kattavin vertailupalvelu auttaa sinua säästämään aikaa ja rahaa.
+              {SITE_TAGLINE}. Monipuolinen vertailupalvelu, joka auttaa sinua säästämään aikaa ja rahaa.
             </p>
             {/* Trust badges */}
             <div className="mt-4 flex flex-wrap gap-2">
@@ -97,6 +97,16 @@ export function Footer() {
               <li>
                 <Link href="/evasteet" className="text-sm text-slate-400 hover:text-cyan-400 transition-colors">
                   Evästeet
+                </Link>
+              </li>
+              <li>
+                <Link href="/menetelma" className="text-sm text-slate-400 hover:text-cyan-400 transition-colors">
+                  Menetelmä
+                </Link>
+              </li>
+              <li>
+                <Link href="/yhteystiedot" className="text-sm text-slate-400 hover:text-cyan-400 transition-colors">
+                  Yhteystiedot
                 </Link>
               </li>
             </ul>

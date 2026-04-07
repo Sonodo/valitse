@@ -70,8 +70,7 @@ export default function PrivacyPolicyPage() {
                   käyttökokemuksen parantaminen.
                 </li>
                 <li>
-                  <strong>Viestintä</strong> — Yhteydenottopyyntöihin vastaaminen ja
-                  uutiskirjeen lähettäminen tilaajille.
+                  <strong>Viestintä</strong> — Yhteydenottopyyntöihin vastaaminen.
                 </li>
                 <li>
                   <strong>Analytiikka</strong> — Palvelun käytön seuranta ja analysointi
@@ -97,10 +96,6 @@ export default function PrivacyPolicyPage() {
                   selain sekä likimääräinen maantieteellinen sijainti. Emme kerää
                   yksilöiviä tunnistetietoja analytiikan avulla.
                 </li>
-                <li>
-                  <strong>Uutiskirjeen tilaustiedot</strong> — Sähköpostiosoite, kun tilaat
-                  uutiskirjeemme. Osoitetta käytetään ainoastaan uutiskirjeen lähettämiseen.
-                </li>
               </ul>
 
               <h2>4. Tietojen säilytysaika</h2>
@@ -114,11 +109,6 @@ export default function PrivacyPolicyPage() {
                   <strong>Analytiikkatiedot</strong> — Google Analyticsin keräämien tietojen
                   säilytysaika noudattaa Googlen omaa tietosuojakäytäntöä. Oletusasetus
                   on 14 kuukautta.
-                </li>
-                <li>
-                  <strong>Uutiskirjeen tilaustiedot</strong> — Sähköpostiosoitetta säilytetään
-                  niin kauan kuin tilaus on voimassa. Peruuttamisen jälkeen osoite poistetaan
-                  30 päivän kuluessa.
                 </li>
               </ul>
 
@@ -135,7 +125,7 @@ export default function PrivacyPolicyPage() {
                 </li>
                 <li>
                   <strong>Resend</strong> — Sähköpostipalvelu, jota käytetään
-                  yhteydenottolomakkeen viestien ja uutiskirjeiden välittämiseen.
+                  yhteydenottolomakkeen viestien välittämiseen.
                 </li>
               </ul>
               <p>

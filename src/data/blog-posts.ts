@@ -57,7 +57,7 @@ export const blogPosts: BlogPost[] = [
 <p>Kiinnitä huomiota erityisesti taloyhtiön kuntoon. Pyydä nähtäväksi isännöitsijäntodistus, energiatodistus ja viimeisimmät tilinpäätökset. Tarkista, onko taloyhtiöllä suunnitteilla suuria remontteja, kuten putkiremontti tai julkisivuremontti. Nämä voivat nostaa vastiketta merkittävästi.</p>
 
 <h2>Kaupanteko ja sen jälkeen</h2>
-<p>Kun olet löytänyt sopivan asunnon, tee tarjous kirjallisesti. Tarjouksessa on syytä mainita ehdot, kuten lainapäätöksen saaminen ja kuntotarkastus. Ensiasunnon ostajana olet vapautettu varainsiirtoverosta, jos olet 18–39-vuotias, ostat asunnon omaan käyttöösi ja et ole aiemmin omistanut vähintään 50 prosenttia asunnosta.</p>
+<p>Kun olet löytänyt sopivan asunnon, tee tarjous kirjallisesti. Tarjouksessa on syytä mainita ehdot, kuten lainapäätöksen saaminen ja kuntotarkastus. Ensiasunnon ostajana olet vapautettu varainsiirtoverosta, jos ostat asunnon omaan käyttöösi ja et ole aiemmin omistanut vähintään 50 prosenttia asunnosta. Huom: vuoden 2025 alusta ikärajavaatimus (aiemmin 18–39 v.) poistui.</p>
 <p>Kaupanteon jälkeen muista hoitaa sähkösopimus, kotivakuutus ja mahdollinen avioehto. Valitse.fi kokoaa kaikki nämä palvelut yhteen paikkaan, joten sinun ei tarvitse etsiä tietoa monesta lähteestä. Onnea uuteen kotiin!</p>
 
 <h2>Viisi tärkeintä vinkkiä ensiasunnon ostajalle</h2>
