@@ -1,5 +1,11 @@
 'use client';
 
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
