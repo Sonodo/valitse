@@ -19,8 +19,8 @@ Rehellinen lainavertailu. 28+ lainanantajaa, todelliset vuosikorot, kaikki laina
 ### Valitse Vakuutus (valitsevakuutus.fi)
 Vakuutusten vertailu (tulossa). 10 vakuutusyhtiötä, auto-, koti- ja matkavakuutukset.
 
-### Valitse Puhelin (valitsepuhelin.fi)
-Puhelinliittymien vertailu. 7 operaattoria, 50+ liittymää, mobiili- ja laajakaistat.
+### Valitse Liittymä (valitseliittyma.fi)
+Puhelinliittymien ja laajakaistojen vertailu. 7 operaattoria, 50+ liittymää, mobiili- ja laajakaistat.
 
 ### Alennuskartta (alennuskartta.fi)
 Tarjoukset ja alennukset kartalla. Päivittäin päivittyvä, kymmeniä kauppaketjuja.

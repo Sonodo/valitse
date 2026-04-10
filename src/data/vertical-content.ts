@@ -132,7 +132,7 @@ export const verticalContent: VerticalContent[] = [
       { title: 'Kaupunkisivut', description: 'Katso liittymätarjoukset ja saatavuus omalla paikkakunnallasi. 5G-kattavuustiedot alueittain.' },
     ],
     faqs: [
-      { question: 'Onko liittymävertailu ilmaista?', answer: 'Kyllä, Valitse Puhelin on täysin ilmainen palvelu. Vertaa kaikkia liittymiä ja operaattoreita maksutta.' },
+      { question: 'Onko liittymävertailu ilmaista?', answer: 'Kyllä, Valitse Liittymä on täysin ilmainen palvelu. Vertaa kaikkia liittymiä ja operaattoreita maksutta.' },
       { question: 'Voiko numeroa siirtää operaattoreiden välillä?', answer: 'Kyllä. Numeron siirto on Suomessa ilmaista ja helppoa. Uusi operaattori hoitaa siirron puolestasi 1–5 arkipäivässä.' },
       { question: 'Mikä on halvin rajaton liittymä?', answer: 'Rajattomien liittymien hinnat alkavat noin 20 eurosta kuukaudessa. Hinta riippuu nopeudesta — 4G-liittymät ovat edullisempia kuin 5G.' },
       { question: 'Tarvitsenko 5G-liittymän?', answer: '5G on nopeampi kuin 4G, mutta useimmille käyttäjille 4G riittää hyvin. 5G kannattaa, jos käytät paljon dataa tai haluat parhaan mahdollisen nopeuden.' },
