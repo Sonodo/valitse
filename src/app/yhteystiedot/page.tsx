@@ -24,9 +24,9 @@ const contactFaqs = [
       'Vastaamme viesteihin 1–2 arkipäivän kuluessa. Kiireelliset virheraportit käsitellään mahdollisuuksien mukaan saman päivän aikana.',
   },
   {
-    question: 'Miten palveluntarjoaja voi liittyä vertailuun?',
+    question: 'Miten palveluntarjoaja voi ilmoittaa tietojen päivityksistä?',
     answer:
-      'Palveluntarjoajat voivat ottaa meihin yhteyttä alla olevan yhteydenottolomakkeen kautta aiheella "Yhteistyö". Kerromme mielellämme lisää kumppanuusmahdollisuuksista. Huomioithan, että näytämme vertailutuloksissa myös ei-kumppaneita — kumppanuus ei ole edellytys vertailussa mukana olemiselle.',
+      'Palveluntarjoajat voivat ottaa meihin yhteyttä yhteydenottolomakkeen kautta aiheella "Tietojen päivitys". Päivitämme tiedot tarkistuksen jälkeen.',
   },
 ];
 

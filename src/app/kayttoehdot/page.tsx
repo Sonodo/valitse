@@ -63,8 +63,9 @@ export default function TermsOfServicePage() {
               </p>
               <p>
                 Palvelun tavoitteena on tarjota puolueettomia vertailutietoja, joiden avulla
-                kuluttajat voivat tehdä tietoon perustuvia päätöksiä. Näytämme kaikki
-                vaihtoehdot — myös ne, joista emme saa komissiota.
+                kuluttajat voivat tehdä tietoon perustuvia päätöksiä. Vertailun järjestys
+                perustuu aina hintaan ja ominaisuuksiin — sama menetelmä koskee jokaista
+                tuotetta.
               </p>
 
               <h2>2. Käyttöoikeus</h2>
@@ -104,17 +105,12 @@ export default function TermsOfServicePage() {
                 välillisistä vahingoista.
               </p>
 
-              <h2>5. Kumppanuudet</h2>
+              <h2>5. Kaupallinen viestintä</h2>
               <p>
-                Osa palvelussa esitetyistä linkeistä on kumppanuuslinkkejä (affiliate-linkkejä),
-                joiden kautta Valitse voi saada komissiota, jos käyttäjä tekee oston tai
-                sopimuksen palveluntarjoajan kanssa.
-              </p>
-              <p>
-                Kumppanuuslinkki on aina merkitty selkeästi. Kumppanuus ei vaikuta
-                vertailujärjestykseen tai arviointeihin — kaikki palveluntarjoajat
-                arvioidaan samoilla kriteereillä. Näytämme myös palveluntarjoajat, joiden
-                kanssa meillä ei ole kumppanuussopimusta.
+                Valitse voi saada korvauksen palveluntarjoajilta, kun käyttäjä siirtyy
+                palvelusta eteenpäin. Tämä ei vaikuta vertailun järjestykseen, joka
+                perustuu aina hintaan ja ominaisuuksiin samalla menetelmällä jokaiselle
+                tuotteelle.
               </p>
 
               <h2>6. Immateriaalioikeudet</h2>

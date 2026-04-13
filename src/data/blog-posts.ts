@@ -49,7 +49,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Talouden kartoitus ja lainan kilpailuttaminen</h2>
 <p>Ennen asuntojen katsomista selvitä, paljonko sinulla on varaa maksaa asunnosta. Nyrkkisääntönä asumiskulut (lainan lyhennys, vastike, sähkö) eivät saisi ylittää 35 prosenttia nettotuloistasi. Laske oma budjettisi Asuntomaatin laskureilla ja ota huomioon myös taloyhtiön tulevat remontit.</p>
-<p>Kilpailuta asuntolaina vähintään kolmesta pankista. Korkoero voi olla yllättävän suuri — jo 0,3 prosenttiyksikön ero marginaalissa tarkoittaa tuhansien eurojen eroa lainan kokonaiskustannuksissa. Lainavertailun kautta näet kaikkien lainanantajien ehdot läpinäkyvästi, myös niiden, jotka eivät mainosta aktiivisesti.</p>
+<p>Kilpailuta asuntolaina vähintään kolmesta pankista. Korkoero voi olla yllättävän suuri — jo 0,3 prosenttiyksikön ero marginaalissa tarkoittaa tuhansien eurojen eroa lainan kokonaiskustannuksissa. Lainavertailun kautta näet pankkien ehdot rinnakkain samoilla kriteereillä.</p>
 <p>Muista neuvotella myös lainan muista ehdoista: lyhennysvapaista, mahdollisuudesta tehdä ylimääräisiä lyhennyksiä ilman kuluja ja korkokatosta. Nämä voivat olla pitkällä aikavälillä yhtä tärkeitä kuin itse marginaali.</p>
 
 <h2>Asunnon etsiminen ja arviointi</h2>
@@ -111,7 +111,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Todellinen vuosikorko — lainan ainoa oikea hintamittari</h2>
 <p>Lainan hintaa mitataan todellisella vuosikorolla, joka sisältää nimelliskoron lisäksi kaikki lainaan liittyvät pakolliset kulut. Tämä on ainoa luku, jolla voit vertailla eri lainoja luotettavasti keskenään. Älä anna houkuttelevien "alkaen"-korkojen hämätä — ne koskevat usein vain pienintä riskiä edustavaa asiakasryhmää.</p>
-<p>Lainavertailun kautta näet jokaisen lainanantajan todellisen vuosikoron selkeästi. Näytämme myös lainat, joiden tarjoajien kanssa meillä ei ole kumppanuutta — rehellisyys ja läpinäkyvyys ovat palvelumme perusta.</p>
+<p>Lainavertailun kautta näet jokaisen lainanantajan todellisen vuosikoron selkeästi. Sama menetelmä koskee jokaista lainaa — järjestys perustuu todelliseen vuosikorkoon ja kokonaiskustannukseen.</p>
 
 <h2>Laina-ajan vaikutus kokonaiskustannuksiin</h2>
 <p>Pidempi laina-aika tarkoittaa pienempiä kuukauseriä mutta suurempia kokonaiskustannuksia. Esimerkiksi 15 000 euron laina 7 prosentin todellisella vuosikorolla maksaa 3 vuoden laina-ajalla noin 1 700 euroa korkoja. Samalla korolla 7 vuoden laina-ajalla korkoja kertyy noin 4 000 euroa. Ero on huomattava.</p>
@@ -122,7 +122,7 @@ export const blogPosts: BlogPost[] = [
 <p>Erityisesti kannattaa kiinnittää huomiota siihen, voitko tehdä ylimääräisiä lyhennyksiä ilman lisäkuluja. Tämä mahdollisuus voi säästää tuhansia euroja, jos taloudellinen tilanteesi paranee laina-aikana. Jotkut lainanantajat veloittavat ennenaikaisesta takaisinmaksusta jopa 1–2 prosenttia jäljellä olevasta lainasummasta.</p>
 
 <h2>7 vinkkiä lainavertailuun</h2>
-<p>Yhteenvetona tärkeimmät asiat lainojen vertailussa: 1) Vertaa aina todellista vuosikorkoa, 2) Huomioi kaikki kulut, myös piilotetut, 3) Valitse laina-aika harkiten, 4) Tarkista ylimääräisten lyhennysten mahdollisuus, 5) Vertaa useampaa kuin kolmea lainanantajaa, 6) Älä luota pelkkiin mainoslukuihin, 7) Käytä Lainavertailun kaltaista puolueetonta palvelua, joka näyttää myös ei-kumppaneiden lainat. Huolellinen vertailu voi säästää tuhansia euroja lainan elinkaaren aikana.</p>`,
+<p>Yhteenvetona tärkeimmät asiat lainojen vertailussa: 1) Vertaa aina todellista vuosikorkoa, 2) Huomioi kaikki kulut, myös piilotetut, 3) Valitse laina-aika harkiten, 4) Tarkista ylimääräisten lyhennysten mahdollisuus, 5) Vertaa useampaa kuin kolmea lainanantajaa, 6) Älä luota pelkkiin mainoslukuihin, 7) Käytä Lainavertailun kaltaista puolueetonta palvelua, jossa järjestys perustuu todelliseen vuosikorkoon. Huolellinen vertailu voi säästää tuhansia euroja lainan elinkaaren aikana.</p>`,
   },
   {
     slug: 'kotivakuutus-vertailu',
@@ -240,7 +240,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Lainat: 500–3 000 euroa laina-aikana</h2>
 <p>Lainoissa vertailun hyöty korostuu erityisesti suurissa lainoissa. Asuntolainassa 0,3 prosenttiyksikön ero marginaalissa tarkoittaa 200 000 euron lainassa noin 600 euroa vuodessa eli noin 15 000 euroa 25 vuoden laina-aikana. Kulutusluotoissa korkoero voi olla vielä suurempi — todellinen vuosikorko vaihtelee 5 prosentista yli 20 prosenttiin.</p>
-<p>Lainavertailun kautta näet kaikki lainanantajat, myös ne, jotka eivät mainosta aktiivisesti. Rehellinen vertailu paljastaa todelliset hintaerot ja auttaa sinua valitsemaan edullisimman vaihtoehdon. Jo olemassa olevan lainan kilpailuttaminen uudelleen voi tuoda merkittäviä säästöjä.</p>
+<p>Lainavertailun avulla näet lainanantajien todelliset vuosikorot samassa järjestyksessä ja samoilla kriteereillä. Puolueeton vertailu paljastaa todelliset hintaerot ja auttaa sinua valitsemaan edullisimman vaihtoehdon. Jo olemassa olevan lainan kilpailuttaminen uudelleen voi tuoda merkittäviä säästöjä.</p>
 
 <h2>Yhteenveto: vertailu on tehokkain tapa säästää</h2>
 <p>Kun lasket yhteen sähkön, vakuutusten ja lainojen säästöt, puhutaan helposti 1 500–4 000 euron vuosittaisesta säästöstä. Kymmenen vuodessa se tarkoittaa 15 000–40 000 euroa — summa, jolla voi tehdä paljon. Valitse.fi kokoaa kaikki tärkeimmät vertailupalvelut yhteen paikkaan, jotta voit optimoida taloutesi yhdellä käynnillä. Aloita vertailu jo tänään ja katso, paljonko sinä voit säästää.</p>`,

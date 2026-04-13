@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 export async function GET() {
   const content = `# Valitse — Suomen monipuolisin vertailupalvelu
 
-> Valitse (valitse.fi) on suomalainen vertailupalvelualusta, joka kokoaa yhteen 8 eri vertailupalvelua. Palvelu on ilmainen, puolueeton ja näyttää kaikki vaihtoehdot — myös ne, joista emme saa komissiota.
+> Valitse (valitse.fi) on suomalainen vertailupalvelualusta, joka kokoaa yhteen 8 eri vertailupalvelua. Palvelu on ilmainen ja puolueeton. Vertailun järjestys perustuu aina hintaan ja ominaisuuksiin — sama menetelmä jokaiselle tuotteelle.
 
 ## Palvelut
 
@@ -14,7 +14,7 @@ Monipuolinen asuntovertailupalvelu. 1 800+ sivua, 9 laskuria, 293 kaupungin hint
 Sähkösopimusten vertailu. 42 sähköyhtiötä, pörssisähkön reaaliaikaseuranta, 6 laskuria.
 
 ### Valitse Laina (valitselaina.fi)
-Rehellinen lainavertailu. 28+ lainanantajaa, todelliset vuosikorot, kaikki lainat näkyvissä.
+Puolueeton lainavertailu. 28+ lainanantajaa, todelliset vuosikorot, järjestys perustuu kokonaiskustannukseen.
 
 ### Valitse Vakuutus (valitsevakuutus.fi)
 Vakuutusten vertailu (tulossa). 10 vakuutusyhtiötä, auto-, koti- ja matkavakuutukset.

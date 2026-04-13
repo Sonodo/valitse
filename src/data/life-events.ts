@@ -37,7 +37,7 @@ export const lifeEvents: LifeEvent[] = [
     relatedSpokeIds: ['asuntomaatti', 'lainavertailu', 'energiavertailu', 'fixmera', 'vakuutusvertailu'],
     steps: [
       { order: 1, title: 'Tutki markkinaa', description: 'Vertaa asuinalueita, hintatasoja ja tulevaisuuden näkymiä. Käytä ilmaista hinta-arviotyökalua.', spokeId: 'asuntomaatti', actionText: 'Tutki asuntomarkkinaa' },
-      { order: 2, title: 'Vertaa asuntolainoja', description: 'Kilpailuta asuntolaina ja löydä paras korko. Näytämme kaikki lainanantajat.', spokeId: 'lainavertailu', actionText: 'Vertaa asuntolainoja' },
+      { order: 2, title: 'Vertaa asuntolainoja', description: 'Kilpailuta asuntolaina ja löydä paras korko. Järjestys perustuu todelliseen vuosikorkoon.', spokeId: 'lainavertailu', actionText: 'Vertaa asuntolainoja' },
       { order: 3, title: 'Valitse sähkösopimus', description: 'Vertaa sähkösopimuksia uuteen kotiin ja säästä energia­kuluissa.', spokeId: 'energiavertailu', actionText: 'Vertaa sähköä' },
       { order: 4, title: 'Järjestä kotipalvelut', description: 'Löydä remonttifirma, putkimies tai siivooja uuteen kotiin.', spokeId: 'fixmera', actionText: 'Etsi palveluita' },
       { order: 5, title: 'Hanki kotivakuutus', description: 'Vertaa kotivakuutuksia ja varmista riittävä turva.', spokeId: 'vakuutusvertailu', actionText: 'Vertaa vakuutuksia' },

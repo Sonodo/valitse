@@ -8,22 +8,22 @@ const faqs = [
   {
     question: 'Onko Valitse ilmainen?',
     answer:
-      'Kyllä, Valitse on täysin ilmainen käyttää. Emme veloita sinulta mitään vertailusta tai palveluidemme käytöstä. Rahoitamme toimintamme kumppanuusmaksuilla, jotka eivät vaikuta vertailutuloksiin.',
+      'Kyllä. Valitse on täysin ilmainen käyttää — ei maksuja, ei rekisteröitymistä, ei sitoumusta.',
   },
   {
     question: 'Miten Valitse eroaa muista vertailupalveluista?',
     answer:
-      'Valitse on monipuolinen vertailupalvelu. Yhdestä paikasta voit vertailla sähköä, lainoja, vakuutuksia, liittymiä ja paljon muuta. Pyrimme näyttämään kattavasti eri palveluntarjoajat.',
+      'Valitse on monipuolinen vertailupalvelu. Yhdestä paikasta voit vertailla sähköä, lainoja, vakuutuksia, liittymiä ja paljon muuta. Sama menetelmä koskee jokaista palveluntarjoajaa.',
   },
   {
     question: 'Miten vertailutulokset määräytyvät?',
     answer:
-      'Vertailutulokset perustuvat avoimiin kriteereihin kuten hintaan ja ominaisuuksiin. Kumppanuudet eivät vaikuta tulosten järjestykseen. Lue lisää menetelmästämme Menetelmä-sivulta.',
+      'Vertailun järjestys perustuu objektiivisiin kriteereihin: hintaan, ominaisuuksiin ja ajantasaiseen dataan. Sama menetelmä koskee jokaista tuotetta. Lue lisää menetelmästämme Menetelmä-sivulta.',
   },
   {
     question: 'Voinko luottaa Valitseen?',
     answer:
-      'Valitse on suomalainen yritys. Pyrimme näyttämään kaikki relevantit palveluntarjoajat, ja vertailumenetelmämme on avoimesti dokumentoitu.',
+      'Valitse on suomalainen palvelu. Vertailun järjestys perustuu aina hintaan ja ominaisuuksiin, ja vertailumenetelmämme on avoimesti dokumentoitu.',
   },
   {
     question: 'Mitä kaikkea voin vertailla?',

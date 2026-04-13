@@ -10,16 +10,16 @@ import Breadcrumbs from '@/components/layout/Breadcrumbs';
 export const metadata: Metadata = {
   title: `Tietoa Valitsesta — ${SITE_NAME}`,
   description:
-    'Valitse on monipuolinen suomalainen vertailupalvelu. Autamme suomalaisia tekemään parempia päätöksiä läpinäkyvällä ja puolueettomalla vertailutiedolla.',
+    'Valitse on suomalainen vertailupalvelu. Autamme suomalaisia tekemään parempia päätöksiä puolueettomalla vertailutiedolla — sama menetelmä jokaiselle tuotteelle.',
   alternates: { canonical: `${SITE_URL}/tietoa` },
 };
 
 const values = [
   {
     icon: Scale,
-    title: 'Läpinäkyvä',
+    title: 'Puolueeton',
     description:
-      'Näytämme kattavasti eri vaihtoehdot — myös ne, joista emme saa komissiota. Kumppanuudet eivät vaikuta tuotteiden järjestykseen. Vertailumenetelmämme on avoimesti dokumentoitu.',
+      'Vertailun järjestys perustuu aina hintaan ja ominaisuuksiin. Sama menetelmä koskee jokaista tuotetta, ja vertailumenetelmämme on avoimesti dokumentoitu.',
   },
   {
     icon: Globe,
@@ -60,8 +60,8 @@ export default function TietoaPage() {
             Tietoa Valitsesta
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
-            Autamme suomalaisia tekemään parempia päätöksiä läpinäkyvällä,
-            puolueettomalla ja kattavalla vertailutiedolla.
+            Autamme suomalaisia tekemään parempia päätöksiä puolueettomalla ja
+            kattavalla vertailutiedolla.
           </p>
         </section>
 
@@ -72,23 +72,25 @@ export default function TietoaPage() {
             <div className="prose prose-slate max-w-none">
               <p className="text-slate-600 leading-relaxed">
                 Valitse syntyi yksinkertaisesta ideasta: suomalaisten pitäisi pystyä
-                vertailemaan palveluita ja tuotteita yhdestä luotettavasta paikasta.
-                Liian usein vertailusivustot näyttävät vain kumppaneidensa tuotteita,
-                jolloin kuluttaja ei saa kattavaa kuvaa markkinasta.
+                vertailemaan palveluita ja tuotteita yhdestä luotettavasta paikasta —
+                samalla menetelmällä, samoilla kriteereillä, ilman piilotettuja
+                tuloksia.
               </p>
               <p className="mt-4 text-slate-600 leading-relaxed">
-                Me teemme asiat toisin. Valitse näyttää aina kaikki vaihtoehdot — myös
-                ne palveluntarjoajat, joiden kanssa meillä ei ole kaupallista
-                yhteistyötä. Uskomme, että vain aidosti kattava vertailu palvelee
-                kuluttajan etua. Kun näytämme koko markkinan, sinä voit tehdä parhaan
-                mahdollisen päätöksen.
+                Vertailun järjestys perustuu aina hintaan ja ominaisuuksiin.
+                Sama menetelmä koskee jokaista tuotetta. Näin voit verrata
+                vaihtoehtoja objektiivisesti ja tehdä itsellesi parhaan mahdollisen
+                päätöksen.
               </p>
               <p className="mt-4 text-slate-600 leading-relaxed">
                 Tavoitteemme on olla Suomen luotetuin vertailupalvelu — paikka, jonne
                 suomalaiset tulevat ensin kun haluavat vertailla sähköä, lainoja,
-                vakuutuksia, asuntoja tai mitä tahansa arjen palveluita. Rakennamme
-                luottamusta läpinäkyvyydellä: kerromme avoimesti miten ansaitsemme,
-                miten vertailumme toimii ja miten tiedot kerätään.
+                vakuutuksia, asuntoja tai mitä tahansa arjen palveluita. Lue tarkemmin
+                vertailumenetelmästämme sivulta{' '}
+                <Link href="/menetelma" className="font-medium text-[#0891B2] no-underline hover:underline">
+                  /menetelma
+                </Link>
+                .
               </p>
             </div>
           </div>

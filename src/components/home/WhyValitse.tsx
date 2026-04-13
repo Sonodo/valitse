@@ -4,9 +4,9 @@ import ScrollReveal from '@/components/ScrollReveal';
 const features = [
   {
     icon: Shield,
-    title: 'Laaja vertailu',
+    title: 'Puolueeton vertailu',
     description:
-      'Näytämme kattavasti eri palveluntarjoajat — myös ne, joista emme saa komissiota.',
+      'Järjestys perustuu hintaan ja ominaisuuksiin. Sama menetelmä koskee jokaista palveluntarjoajaa.',
   },
   {
     icon: Zap,

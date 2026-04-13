@@ -44,18 +44,18 @@ export const verticalContent: VerticalContent[] = [
     spokeId: 'lainavertailu',
     howItWorks: [
       { step: 1, title: 'Valitse lainatyyppi', description: 'Kerro, millaista lainaa tarvitset: kulutusluotto, asuntolaina, autolaina vai yhdistelylaina.' },
-      { step: 2, title: 'Vertaa tarjouksia', description: 'Näe kaikkien lainanantajien todelliset vuosikorot ja kokonaiskustannukset — myös ei-kumppaneidemme.' },
+      { step: 2, title: 'Vertaa tarjouksia', description: 'Näe lainanantajien todelliset vuosikorot ja kokonaiskustannukset samoilla kriteereillä. Järjestys perustuu kokonaiskustannukseen.' },
       { step: 3, title: 'Hae lainaa', description: 'Valitse paras vaihtoehto ja siirry lainanantajan sivulle täyttämään hakemus. Saat päätöksen usein minuuteissa.' },
     ],
     detailedFeatures: [
-      { title: 'Rehellinen vertailu', description: 'Näytämme myös lainat, joiden tarjoajien kanssa meillä ei ole kumppanuutta. Todellinen puolueettomuus lainamarkkinoilla.' },
+      { title: 'Puolueeton järjestys', description: 'Sama menetelmä jokaiselle lainalle. Järjestys perustuu todelliseen vuosikorkoon ja kokonaiskustannukseen.' },
       { title: 'Todelliset vuosikorot', description: 'Jokaisen lainan todellinen vuosikorko selkeästi esillä — ei harhaanjohtavia "alkaen"-lukuja.' },
       { title: '6 lainalaskuria', description: 'Laskurit lainan kokonaiskustannusten, kuukausierän, lainojen yhdistelyn ja asuntolainan vertailuun.' },
       { title: '8 lainaopasta', description: 'Kattavat oppaat kulutusluottoihin, asuntolainaan, autolainaan, yhdistelylainaan ja lainan kilpailuttamiseen.' },
     ],
     faqs: [
       { question: 'Vaikuttaako lainahakemus luottotietoihini?', answer: 'Pelkkä lainatarjouksen pyytäminen ei vaikuta luottotietoihisi. Luottotietomerkintä syntyy vasta, kun lainahakemus käsitellään virallisesti.' },
-      { question: 'Miksi näytätte myös ei-kumppaneiden lainoja?', answer: 'Uskomme, että kuluttaja ansaitsee nähdä kaikki vaihtoehdot tehdäkseen parhaan päätöksen. Rehellisyys on palvelumme perusta.' },
+      { question: 'Mihin lainojen järjestys perustuu?', answer: 'Vertailun järjestys perustuu todelliseen vuosikorkoon ja kokonaiskustannukseen. Sama menetelmä koskee jokaista lainaa.' },
       { question: 'Kuinka nopeasti saan lainapäätöksen?', answer: 'Useimmat digitaaliset lainanantajat antavat alustavan päätöksen minuuteissa. Perinteisissä pankeissa käsittely voi kestää 1–3 arkipäivää.' },
       { question: 'Voiko lainan kilpailuttaa uudelleen?', answer: 'Kyllä. Jo olemassa olevan lainan voi kilpailuttaa uudelleen ja siirtää edullisempaan. Tämä on yksi tehokkaimmista tavoista säästää lainakuluissa.' },
     ],

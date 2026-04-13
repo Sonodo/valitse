@@ -4,7 +4,7 @@
 **Status**: LIVE (Vercel default URL)
 **Health**: GREEN
 **GA4**: G-YZJZQWR330 (active)
-**Last Updated**: Session #082 — 2026-04-09
+**Last Updated**: Session #087 — 2026-04-12
 
 ## Overview
 Central hub for the Valitse comparison platform ecosystem. Acts as the spoke-and-hub center linking to all vertical comparison sites (sähkö, laina, vakuutus, puhelin).
@@ -19,6 +19,14 @@ Central hub for the Valitse comparison platform ecosystem. Acts as the spoke-and
 - **lucide-react dependency added**: Was missing, caused build failures
 
 ## Recent Changes
+
+### Session #087 — V-brand Logo, Cookie Canonicalization, Valitse-ID Infra (2026-04-12)
+- **New V-brand logo deployed to production**: Unified Valitse brand mark live on Vertaile Hub
+- **Cookie consent canonicalized**: Single source of truth for GDPR cookie banner across the hub
+- **Elämänmuutokset dropdown added**: New navigation dropdown in Vertaile Hub linking to life-change pages
+- **Valitse-ID infrastructure provisioned**: Shared Neon Postgres DB + Google OAuth app + AUTH_SECRET set across all Valitse Vercel projects
+- **Vercel redeployed**: Production redeploy completed with updated env vars
+- **Pending**: Frontend Valitse-ID auth code — login button, token verification, shared user table wiring, session cookie handling
 
 ### Session #082 — TypeScript Build Fix (2026-04-09)
 - **Fixed TypeScript build error**: Added `window.gtag` type declaration to `CookieConsent.tsx`
@@ -45,11 +53,13 @@ Central hub for the Valitse comparison platform ecosystem. Acts as the spoke-and
 
 ## Next Steps
 
-1. **Register custom domain** for the hub itself (valitse.fi or similar)
-2. **Submit sitemap to Google Search Console** — accelerate indexing
-3. **Apply for AdSense** — organic traffic monetization
-4. **Add more spoke sites** as verticals launch
+1. **Wire frontend Valitse-ID auth** — login button, token verification, shared user table, session cookie
+2. **Register custom domain** for the hub itself (valitse.fi or similar)
+3. **Submit sitemap to Google Search Console** — accelerate indexing
+4. **Apply for AdSense** — organic traffic monetization
+5. **Add more spoke sites** as verticals launch
 
 ## Blockers
 
 - No custom domain yet — hub is on Vercel default URL
+- Valitse-ID frontend auth code not yet implemented (infra is ready)

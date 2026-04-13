@@ -38,8 +38,8 @@ export default function PalvelutPage() {
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
             Valitse tarjoaa yli 8 vertailupalvelua, jotka kattavat suomalaisen arjen
-            tärkeimmät osa-alueet. Jokaisessa palvelussa näytämme kaikki vaihtoehdot —
-            myös ne, joista emme saa komissiota.
+            tärkeimmät osa-alueet. Sama menetelmä koskee jokaista tuotetta — järjestys
+            perustuu hintaan ja ominaisuuksiin.
           </p>
         </section>
 

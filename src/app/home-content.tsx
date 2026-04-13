@@ -53,7 +53,7 @@ const verticals = [
     id: 'lainat',
     name: 'Valitse Laina',
     tagline: 'Vertaa lainoja rehellisesti',
-    description: 'Näytämme kaikki lainat — myös ne, joista emme saa komissiota. Vertaa kulutusluottoja, asuntolainoja ja yhdistelylainoja 28+ lainanantajalta.',
+    description: 'Vertaa kulutusluottoja, asuntolainoja ja yhdistelylainoja 28+ lainanantajalta. Järjestys perustuu hintaan ja todelliseen vuosikorkoon.',
     icon: Landmark,
     color: '#7C3AED',
     colorLight: '#EDE9FE',
@@ -77,7 +77,7 @@ const verticals = [
     id: 'liittymat',
     name: 'Valitse Liittymä',
     tagline: 'Vertaa puhelinliittymiä',
-    description: 'Vertaa kaikkien operaattoreiden liittymiä — Elisa, DNA, Telia, Moi ja muut — yhdestä paikasta. Löydä halvin 5G-liittymä tai rajaton data.',
+    description: 'Vertaa merkittävimpien operaattoreiden liittymiä — Elisa, DNA, Telia, Moi ja muut — yhdestä paikasta. Löydä halvin 5G-liittymä tai rajaton data.',
     icon: Smartphone,
     color: '#8B5CF6',
     colorLight: '#EDE9FE',
@@ -147,7 +147,7 @@ const valueProps = [
   {
     icon: Shield,
     title: 'Laaja vertailu',
-    description: 'Näytämme kaikki merkittävät palveluntarjoajat — myös ne, joista emme saa komissiota.',
+    description: 'Puolueeton vertailu, jossa sama menetelmä koskee jokaista palveluntarjoajaa. Järjestys perustuu hintaan ja ominaisuuksiin.',
   },
   {
     icon: Clock,
@@ -169,7 +169,7 @@ const valueProps = [
 const faqItems = [
   {
     q: 'Onko Valitse ilmainen?',
-    a: 'Kyllä, Valitse on täysin ilmainen käyttää. Emme veloita sinulta mitään vertailusta tai palveluidemme käytöstä. Rahoitamme toimintamme kumppanuusmaksuilla, jotka eivät vaikuta vertailutuloksiin.',
+    a: 'Kyllä. Valitse on täysin ilmainen käyttää — ei maksuja, ei rekisteröitymistä, ei sitoumusta.',
   },
   {
     q: 'Miten Valitse eroaa muista vertailupalveluista?',
@@ -177,7 +177,7 @@ const faqItems = [
   },
   {
     q: 'Miten vertailutulokset määräytyvät?',
-    a: 'Vertailutulokset perustuvat avoimiin kriteereihin kuten hintaan ja ominaisuuksiin. Kumppanuudet eivät vaikuta tulosten järjestykseen.',
+    a: 'Vertailun järjestys perustuu objektiivisiin kriteereihin: hintaan, ominaisuuksiin ja ajantasaiseen dataan. Sama menetelmä koskee jokaista tuotetta. Lue lisää sivulta /menetelma.',
   },
   {
     q: 'Mitä kaikkea voin vertailla?',
@@ -185,7 +185,7 @@ const faqItems = [
   },
   {
     q: 'Voinko luottaa Valitseen?',
-    a: 'Valitse on suomalainen yritys. Pyrimme näyttämään kaikki relevantit palveluntarjoajat, ja vertailumenetelmämme on avoimesti dokumentoitu.',
+    a: 'Valitse on suomalainen palvelu. Vertailun järjestys perustuu aina hintaan ja ominaisuuksiin, ja vertailumenetelmämme on avoimesti dokumentoitu sivulla /menetelma.',
   },
   {
     q: 'Miten pääsen alkuun?',
@@ -607,7 +607,7 @@ export default function HomeContent() {
                 <tbody className="divide-y divide-slate-100 bg-white text-sm">
                   {[
                     { label: 'Kattavuus', a: 'Yksi palvelu kerrallaan', b: 'Yksi kategoria', c: 'Kaikki kategoriat' },
-                    { label: 'Läpinäkyvyys', a: 'Mainosten vaikutus', b: 'Vaihtelee', c: 'Avoin menetelmä' },
+                    { label: 'Menetelmä', a: 'Vaihtelee', b: 'Vaihtelee', c: 'Avoin menetelmä' },
                     { label: 'Ajantasaisuus', a: 'Vaihtelee', b: 'Vaihtelee', c: 'Säännöllisesti päivitetty' },
                     { label: 'Ajankäyttö', a: 'Tunteja', b: 'Kymmeniä minuutteja', c: 'Muutama minuutti' },
                     { label: 'Hinta', a: 'Ilmainen', b: 'Usein ilmainen', c: 'Aina ilmainen' },

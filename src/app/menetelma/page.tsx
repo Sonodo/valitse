@@ -5,7 +5,7 @@ import {
   Scale,
   BarChart3,
   RefreshCw,
-  Handshake,
+  ShieldCheck,
   MessageSquare,
 } from 'lucide-react';
 import { SITE_NAME, SITE_URL } from '@/lib/constants';
@@ -15,7 +15,7 @@ import Breadcrumbs from '@/components/layout/Breadcrumbs';
 export const metadata: Metadata = {
   title: `Menetelmä — Miten vertailumme toimii | ${SITE_NAME}`,
   description:
-    'Lue miten Valitse kerää tietoja, vertailee palveluita ja varmistaa puolueettomuuden. Läpinäkyvä menetelmä ja ansaintamalli.',
+    'Näin Valitse kerää tietoja ja järjestää vertailutulokset. Järjestys perustuu hintaan ja ominaisuuksiin — sama menetelmä koskee jokaista tuotetta.',
   alternates: { canonical: `${SITE_URL}/menetelma` },
 };
 
@@ -35,9 +35,9 @@ const sections = [
     icon: Scale,
     title: 'Puolueettomuus',
     content: [
-      'Valitse näyttää aina kaikki vaihtoehdot — sekä kumppaneidemme tuotteet että ne palveluntarjoajat, joiden kanssa meillä ei ole kaupallista yhteistyötä. Tämä on periaatteemme ydin ja erottaa meidät useimmista vertailusivustoista.',
-      'Kaupalliset kumppanuudet eivät koskaan vaikuta tuotteiden tai palveluiden järjestykseen vertailutaulukoissa. Oletusarvoisesti tulokset järjestetään kuluttajalle edullisimman vaihtoehdon mukaan (esimerkiksi halvimman hinnan tai todellisen vuosikoron mukaan).',
-      'Kumppanuussuhde voi näkyä ainoastaan merkintänä "Kumppani" tuotteen yhteydessä, mutta tämä ei vaikuta sen sijoitukseen. Ei-kumppanien tuotteet näytetään aina samassa listassa.',
+      'Vertailun järjestys perustuu aina hintaan ja tuotekohtaisiin ominaisuuksiin. Sama menetelmä koskee jokaista tuotetta — ei suosikkeja, ei piilotettuja tuloksia.',
+      'Oletusarvoisesti tulokset järjestetään kuluttajalle edullisimman vaihtoehdon mukaan (esimerkiksi halvimman hinnan tai todellisen vuosikoron mukaan). Käyttäjä voi aina muuttaa järjestystä haluamallaan tavalla.',
+      'Emme käytä subjektiivisia pisteytyksiä, jotka voisivat olla harhaanjohtavia. Näytämme avointa dataa ja annamme kuluttajan tehdä päätöksen itse.',
     ],
   },
   {
@@ -61,13 +61,14 @@ const sections = [
     ],
   },
   {
-    id: 'kumppanuudet',
-    icon: Handshake,
-    title: 'Kumppanuudet ja ansaintamalli',
+    id: 'mita-emme-tee',
+    icon: ShieldCheck,
+    title: 'Mitä emme tee',
     content: [
-      'Valitse ansaitsee pääasiassa affiliate-komissioista. Kun klikkaat kumppanimme tuotetta ja teet sopimuksen tai ostoksen, saamme siitä pienen provision. Tämä ei koskaan vaikuta tuotteen hintaan sinulle — hinta on aina sama kuin suoraan palveluntarjoajan sivulla.',
-      'Tärkeintä: näytämme aina myös ne palveluntarjoajat, joiden kanssa meillä ei ole kumppanuutta. Jos markkinoiden edullisin vaihtoehto on ei-kumppanimme, se näytetään ensimmäisenä. Kuluttajan etu menee aina ansaintamallimme edelle.',
-      'Kumppanuudet merkitään selkeästi jokaisen tuotteen yhteydessä. Emme koskaan piilota sitä, onko kyseessä kaupallinen yhteistyö vai ei.',
+      'Ei dark patterneja. Emme käytä pimeitä käyttöliittymäkikkoja, jotka painostavat sinua toimimaan hätäisesti.',
+      'Ei väärennettyjä arvosteluja tai subjektiivisia pisteytyksiä, jotka voisivat vääristää käsitystä tuotteista.',
+      'Ei piilotettuja kustannuksia. Hinnat ja kulut esitetään avoimesti ja selkeästi.',
+      'Emme myy käyttäjätietojasi. Tietosuoja on kerrottu sivulla /tietosuoja.',
     ],
   },
   {
@@ -107,8 +108,8 @@ export default function MenetelmaPage() {
             Miten vertailumme toimii
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
-            Läpinäkyvyys on palvelumme perusta. Täällä kerromme avoimesti miten keräämme
-            tietoja, miten vertailumme toimii ja miten ansaitsemme.
+            Näin vertailemme: avoin menetelmä, ajantasainen data ja sama järjestyskriteeri
+            jokaiselle tuotteelle.
           </p>
         </section>
 
