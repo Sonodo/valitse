@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ArrowLeft, ArrowRight, Clock, User } from 'lucide-react';
-import { oppaat, getOppaatBySlug, HENRI_AUTHOR } from '@/data/oppaat';
+import { ArrowLeft, ArrowRight, Clock, Building2 } from 'lucide-react';
+import { oppaat, getOppaatBySlug, SONODO_PUBLISHER } from '@/data/oppaat';
 import { SITE_NAME, SITE_URL } from '@/lib/constants';
 import { generateBreadcrumbSchema, generateFAQSchema } from '@/lib/seo';
 import Breadcrumbs from '@/components/layout/Breadcrumbs';
@@ -29,7 +29,7 @@ export async function generateMetadata({
       type: 'article',
       publishedTime: guide.publishedAt,
       modifiedTime: guide.updatedAt,
-      authors: [HENRI_AUTHOR.name],
+      authors: [SONODO_PUBLISHER.name],
     },
   };
 }
@@ -62,20 +62,20 @@ export default async function OpasPage({
     datePublished: guide.publishedAt,
     dateModified: guide.updatedAt,
     author: {
-      '@type': 'Person',
-      name: HENRI_AUTHOR.name,
-      jobTitle: HENRI_AUTHOR.jobTitle,
-      url: `${SITE_URL}/toimituksen-periaatteet`,
-      alumniOf: {
-        '@type': 'EducationalOrganization',
-        name: HENRI_AUTHOR.alumniOf,
-      },
+      '@type': 'Organization',
+      name: 'Sonodo',
+      url: SITE_URL,
     },
     publisher: {
       '@type': 'Organization',
       name: 'Sonodo',
       url: SITE_URL,
       taxID: '2887416-4',
+      identifier: {
+        '@type': 'PropertyValue',
+        propertyID: 'FI Y-tunnus',
+        value: '2887416-4',
+      },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
@@ -136,8 +136,8 @@ export default async function OpasPage({
                   {guide.readTime} min lukuaika
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <User className="h-4 w-4" />
-                  {HENRI_AUTHOR.name}, {HENRI_AUTHOR.qualification.split(' ')[0]}
+                  <Building2 className="h-4 w-4" />
+                  Sonodo (Valitse-verkoston operaattori)
                 </span>
                 <span>
                   Päivitetty{' '}
@@ -170,11 +170,12 @@ export default async function OpasPage({
               </div>
             </section>
 
-            {/* Author / editorial note */}
+            {/* Editorial note */}
             <section className="mt-10 rounded-xl border border-slate-200 bg-white p-6">
               <p className="text-sm text-slate-600">
-                <strong className="text-slate-900">{HENRI_AUTHOR.name}</strong>,{' '}
-                {HENRI_AUTHOR.qualification}. {HENRI_AUTHOR.description} Lue{' '}
+                Toimituksellinen vastuu Valitse-verkostosta on{' '}
+                <strong className="text-slate-900">Sonodolla</strong>{' '}
+                (Y-tunnus 2887416-4). {SONODO_PUBLISHER.description} Lue{' '}
                 <Link
                   href="/toimituksen-periaatteet"
                   className="text-[#0891B2] hover:underline"

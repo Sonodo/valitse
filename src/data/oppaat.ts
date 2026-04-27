@@ -4,7 +4,7 @@
  * These guides differ from `blog-posts.ts` in scope and intent:
  * - Cross-categorical (touch >1 spoke)
  * - Methodology / E-E-A-T anchors (sourced authorities cited inline)
- * - Authored by Henri Linnainmaa, KTM (vastaava päätoimittaja)
+ * - Authored by the Valitse editorial team under Sonodo
  * - FAQ + Article JSON-LD on every page
  *
  * Linked spokes use full https://valitse{vertical}.fi URLs (not internal /palvelut/...)
@@ -32,14 +32,12 @@ export interface OppaatGuide {
   tags: string[];
 }
 
-export const HENRI_AUTHOR = {
-  name: 'Henri Linnainmaa',
-  jobTitle: 'Vastaava päätoimittaja',
-  qualification: 'KTM (Aalto-yliopisto)',
+export const SONODO_PUBLISHER = {
+  name: 'Sonodo',
+  url: 'https://valitse.fi',
+  taxID: '2887416-4',
   description:
-    'Vastaa Valitse-verkoston vertailumetodologiasta, datalähteistä ja toimituksellisista periaatteista.',
-  alumniOf: 'Aalto-yliopiston kauppakorkeakoulu',
-  url: 'https://valitse.fi/toimituksen-periaatteet',
+    'Sonodo on Valitse-vertailupalveluverkoston operaattori ja vastaa verkoston toimituksellisesta sisällöstä.',
 };
 
 export const oppaat: OppaatGuide[] = [
@@ -136,7 +134,7 @@ export const oppaat: OppaatGuide[] = [
       {
         question: 'Miten tarkistan, että vertailupalvelu on puolueeton?',
         answer:
-          'Tarkista, onko vertailupalvelulla julkinen menetelmäsivu ja merkitseekö se affiliate-linkit (esim. rel="sponsored"). Lue myös toimituksen periaatteet: mainitaanko vastaava päätoimittaja, kuvataanko datalähteet ja kuinka usein hintoja päivitetään?',
+          'Tarkista, onko vertailupalvelulla julkinen menetelmäsivu ja merkitseekö se affiliate-linkit (esim. rel="sponsored"). Lue myös toimituksen periaatteet: kerrotaanko julkaisijasta ja Y-tunnuksesta, kuvataanko datalähteet ja kuinka usein hintoja päivitetään?',
       },
       {
         question: 'Mistä tiedän, milloin sopimukseni kannattaa kilpailuttaa uudelleen?',
@@ -589,7 +587,7 @@ export const oppaat: OppaatGuide[] = [
 <h2>5. Toimituksellinen riippumattomuus</h2>
 <p>Kirjoitetut oppaat, sanastot ja artikkelit eivät käsittele tai mainosta yksittäisiä yhteistyökumppaneita poikkeuksellisen positiivisesti. Toimitus toimii erillään myynnistä:</p>
 <ul>
-<li>Vastaava päätoimittaja: Henri Linnainmaa, KTM (Aalto-yliopisto).</li>
+<li>Toimituksellinen vastuu: Sonodo (Y-tunnus 2887416-4) — Valitse-verkoston operaattori.</li>
 <li>Toimitukselliset sisällöt eivät hyödy yksittäisten kumppanien kaupallisesta menestyksestä.</li>
 <li>Korjauspolitiikka: jos havaitsemme virheen julkaistussa artikkelissa, päivitämme tekstin ja merkitsemme oikaisun selvästi.</li>
 </ul>
@@ -604,13 +602,13 @@ export const oppaat: OppaatGuide[] = [
 </ul>
 
 <h2>7. Reklamaatiot ja palautekanavat</h2>
-<p>Kuluttajareklamaation virheellisestä tiedosta voi tehdä yhteydenottolomakkeellamme. Vastaamme 1–2 arkipäivän kuluessa. Jos haluat valittaa toimituksellisesta sisällöstä, voit ottaa yhteyden suoraan vastaavaan päätoimittajaan.</p>
+<p>Kuluttajareklamaation virheellisestä tiedosta voi tehdä yhteydenottolomakkeellamme. Vastaamme 1–2 arkipäivän kuluessa. Jos haluat valittaa toimituksellisesta sisällöstä, voit ottaa yhteyden Sonodoon (Valitse-verkoston operaattori) saman lomakkeen kautta.</p>
 <p>Mikäli haluat viedä asian valvovalle viranomaiselle, oikea taho riippuu vertikaalista (lista yllä). Kuluttajariitalautakunta käsittelee yli 50 € erimielisyydet maksuttomasti.</p>
 
 <h2>Miten muut suomalaiset vertailupalvelut toimivat</h2>
 <p>Suomessa toimii useita vertailusivustoja, ja eri toimijoiden toimitukselliset käytännöt eroavat toisistaan. Yhteistä useimmille on affiliate-tulomalli, mutta erot näkyvät:</p>
 <ul>
-<li><strong>Avoimuudessa</strong>: kerrotaanko vastaava päätoimittaja, dokumentoidaanko rankkauskriteerit, merkitäänkö kaupallinen yhteistyö selkeästi.</li>
+<li><strong>Avoimuudessa</strong>: kerrotaanko julkaisija ja Y-tunnus, dokumentoidaanko rankkauskriteerit, merkitäänkö kaupallinen yhteistyö selkeästi.</li>
 <li><strong>Datan tuoreudessa</strong>: päivitysrytmi vaihtelee päivittäisestä vuosittaiseen.</li>
 <li><strong>Toimituksellisen ja kaupallisen erillisyydessä</strong>: jotkut sivustot antavat yhteistyökumppanille mahdollisuuden kommentoida toimituksellista sisältöä, toiset eivät.</li>
 </ul>
@@ -620,7 +618,7 @@ export const oppaat: OppaatGuide[] = [
 <p>Yksi tärkeimmistä luotettavuuden takaajista on toimituksellisen ja kaupallisen toiminnon erillisyys. Käytännössä Valitse-verkostossa tämä tarkoittaa:</p>
 <ul>
 <li>Kaupallista myyntiä ja yhteistyökumppanuuksia hoitaa eri tiimi kuin toimituksellisia oppaita ja sanastoja.</li>
-<li>Vastaava päätoimittaja ei osallistu yhteistyökumppanineuvotteluihin tai hinnoitteluun.</li>
+<li>Toimituksesta vastaavat henkilöt eivät osallistu yhteistyökumppanineuvotteluihin tai hinnoitteluun.</li>
 <li>Yksittäisellä yhteistyökumppanilla ei ole oikeutta tarkistaa tai muuttaa toimituksellista sisältöä ennen sen julkaisua.</li>
 <li>Mainittujen palveluntarjoajien negatiiviset huomiot (esim. KKV:n tai Finanssivalvonnan antamat huomautukset) raportoidaan, vaikka kyseessä olisi affiliate-kumppani.</li>
 </ul>
@@ -644,7 +642,7 @@ export const oppaat: OppaatGuide[] = [
 </ul>
 
 <h2>Yhteenveto</h2>
-<p>Valitse-verkoston malli: kaikki tuotteet samalla viivalla, sama metodologia, sponsoroitu sisältö avoimesti merkitty, datan päivitys vertikaalikohtaisella rytmillä. Tämä on E-E-A-T-ankkurimme — tunnettu vastaava päätoimittaja, dokumentoitu metodologia, sitoutuminen valvovien viranomaisten ohjeistuksiin.</p>
+<p>Valitse-verkoston malli: kaikki tuotteet samalla viivalla, sama metodologia, sponsoroitu sisältö avoimesti merkitty, datan päivitys vertikaalikohtaisella rytmillä. Tämä on E-E-A-T-ankkurimme — selkeä operaattorivastuu (Sonodo), dokumentoitu metodologia, sitoutuminen valvovien viranomaisten ohjeistuksiin.</p>
 <p>Lue myös <a href="/toimituksen-periaatteet">toimituksen periaatteet</a> -sivumme ja <a href="/menetelma">menetelmäsivumme</a>.</p>
 `,
     faqs: [
@@ -659,9 +657,9 @@ export const oppaat: OppaatGuide[] = [
           'Per-item Mainos-tag on harhaanjohtava, koska kaikki samaan kategoriaan kuuluvat tuotteet käsitellään samalla logiikalla — ei vain yhteistyökumppanit. Käytämme sivustotason avoimuuslauseketta ja teknisellä tasolla rel="sponsored" -attribuuttia, mikä on linjassa Googlen ja KKV:n ohjeistuksen kanssa.',
       },
       {
-        question: 'Kuka on vastaava päätoimittaja?',
+        question: 'Kuka vastaa Valitse-verkoston toimituksellisesta sisällöstä?',
         answer:
-          'Henri Linnainmaa, KTM (Aalto-yliopisto). Hän vastaa Valitse-verkoston vertailumetodologiasta, datalähteistä ja toimituksellisista periaatteista. Yhteystiedot löytyvät /toimituksen-periaatteet -sivulta.',
+          'Toimituksellinen vastuu Valitse-verkostosta on Sonodolla (Y-tunnus 2887416-4). Sonodo vastaa verkoston vertailumetodologiasta, datalähteistä ja toimituksellisista periaatteista. Lisätiedot löytyvät /toimituksen-periaatteet -sivulta.',
       },
       {
         question: 'Kuinka usein hintatiedot päivitetään?',
@@ -764,7 +762,7 @@ export const oppaat: OppaatGuide[] = [
 <p>Tämä artikkeli on osa laajempaa AEO (Answer Engine Optimization) -ajattelua: kun käyttäjät kysyvät rahoituskysymyksiä AI-malleilta, vastaukset rakentuvat osittain niiden lähteiden päälle, jotka mallit ovat lukeneet koulutusdatasta tai web-haulla. Hyvin kirjoitettu, lähteistetty, jäsennelty sisältö (kuten Valitse-verkoston oppaat ja sanastot) auttaa AI-malleja antamaan parempia vastauksia.</p>
 <p>Käytännössä tämä tarkoittaa, että jos kysyt ChatGPT:ltä "miten valitsen sähkösopimuksen Suomessa?", parhaat vastaukset rakentuvat tietolähteistä, joilla on:</p>
 <ol>
-<li>Selkeä tekijä (vastaava päätoimittaja, KTM-tason koulutus)</li>
+<li>Selkeä julkaisija ja toimituksellinen vastuutaho (esim. nimetty operaattoriyritys ja Y-tunnus)</li>
 <li>Lähteistetty rakenne (viittaukset Energiavirastoon, KKV:hen)</li>
 <li>Jäsennelty FAQ-osio (kysymys-vastaus-pareja)</li>
 <li>Schema.org-merkinnät (Article, FAQPage, BreadcrumbList JSON-LD)</li>
@@ -800,7 +798,7 @@ export const oppaat: OppaatGuide[] = [
       {
         question: 'Miksi vertailupalvelut ovat edelleen tärkeitä, jos AI on saatavilla?',
         answer:
-          'Vertailupalvelut tuottavat reaaliaikaista, todennettua dataa — juuri sitä, mihin LLM:t eivät yksin pysty. Lisäksi toimituksellinen vastuu (vastaava päätoimittaja, oikaisupolitiikka, valvovien viranomaisten ohjeistuksiin sitoutuminen) tekee vertailupalvelujen tiedosta luotettavampaa kuin yksittäisen LLM-istunnon vastaus.',
+          'Vertailupalvelut tuottavat reaaliaikaista, todennettua dataa — juuri sitä, mihin LLM:t eivät yksin pysty. Lisäksi toimituksellinen vastuu (nimetty operaattori, oikaisupolitiikka, valvovien viranomaisten ohjeistuksiin sitoutuminen) tekee vertailupalvelujen tiedosta luotettavampaa kuin yksittäisen LLM-istunnon vastaus.',
       },
       {
         question: 'Onko järkevää käyttää useaa AI-mallia rinnakkain?',

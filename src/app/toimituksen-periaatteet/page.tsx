@@ -3,13 +3,12 @@ import Link from 'next/link';
 import { Shield, ScrollText, Scale, Globe } from 'lucide-react';
 import { SITE_NAME, SITE_URL } from '@/lib/constants';
 import { generateBreadcrumbSchema } from '@/lib/seo';
-import { HENRI_AUTHOR } from '@/data/oppaat';
 import Breadcrumbs from '@/components/layout/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: `Toimituksen periaatteet — ${SITE_NAME}`,
   description:
-    'Vastaava päätoimittaja Henri Linnainmaa, KTM (Aalto-yliopisto). Vertailumetodologia, datalähteet, sponsoroidun sisällön merkintä ja oikaisupolitiikka koko Valitse-verkostossa.',
+    'Toimituksellinen vastuu Valitse-verkostosta on Sonodolla (Y-tunnus 2887416-4). Vertailumetodologia, datalähteet, sponsoroidun sisällön merkintä ja oikaisupolitiikka koko Valitse-verkostossa.',
   alternates: { canonical: `${SITE_URL}/toimituksen-periaatteet` },
 };
 
@@ -43,33 +42,6 @@ export default function ToimituksenPeriaatteetPage() {
     { name: 'Toimituksen periaatteet', url: '/toimituksen-periaatteet' },
   ]);
 
-  const personSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Person',
-    name: HENRI_AUTHOR.name,
-    jobTitle: HENRI_AUTHOR.jobTitle,
-    description: HENRI_AUTHOR.description,
-    url: `${SITE_URL}/toimituksen-periaatteet`,
-    alumniOf: {
-      '@type': 'EducationalOrganization',
-      name: HENRI_AUTHOR.alumniOf,
-      url: 'https://www.aalto.fi',
-    },
-    worksFor: {
-      '@type': 'Organization',
-      name: 'Sonodo',
-      url: SITE_URL,
-    },
-    knowsAbout: [
-      'Vertailumetodologia',
-      'Sähkösopimukset',
-      'Kulutusluotot ja asuntolainat',
-      'Vakuutustuotteet',
-      'Mobiili- ja laajakaistaliittymät',
-      'Kuluttajansuoja Suomessa',
-    ],
-  };
-
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
@@ -77,6 +49,11 @@ export default function ToimituksenPeriaatteetPage() {
     legalName: 'Sonodo',
     url: SITE_URL,
     taxID: '2887416-4',
+    identifier: {
+      '@type': 'PropertyValue',
+      propertyID: 'FI Y-tunnus',
+      value: '2887416-4',
+    },
     description:
       'Sonodo on Valitse-vertailupalveluverkoston operaattori. Verkostoon kuuluvat valitse.fi, valitsesahko.fi, valitselaina.fi, valitsevakuutus.fi ja valitseliittyma.fi.',
     knowsAbout: [
@@ -98,11 +75,6 @@ export default function ToimituksenPeriaatteetPage() {
         addressCountry: 'FI',
       },
     },
-    employee: {
-      '@type': 'Person',
-      name: HENRI_AUTHOR.name,
-      jobTitle: HENRI_AUTHOR.jobTitle,
-    },
   };
 
   return (
@@ -110,10 +82,6 @@ export default function ToimituksenPeriaatteetPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
       />
       <script
         type="application/ld+json"
@@ -137,36 +105,29 @@ export default function ToimituksenPeriaatteetPage() {
           </p>
         </section>
 
-        {/* Vastaava päätoimittaja */}
+        {/* Toimituksellinen vastuu */}
         <section className="mb-12 rounded-2xl border border-slate-200 bg-white p-8 sm:p-10">
           <h2 className="text-2xl font-bold text-[#0B1F3F]">
-            Vastaava päätoimittaja
+            Toimituksellinen vastuu
           </h2>
           <div className="mt-6 space-y-4 text-slate-700 leading-relaxed">
             <p>
-              <strong className="text-slate-900">{HENRI_AUTHOR.name}</strong>,{' '}
-              {HENRI_AUTHOR.qualification}.
+              Toimituksellinen vastuu Valitse-verkoston sisällöstä on{' '}
+              <strong className="text-slate-900">Sonodolla</strong> (Y-tunnus
+              2887416-4), joka toimii koko verkoston operaattorina.
             </p>
             <p>
-              Henri Linnainmaa vastaa koko Valitse-verkoston
-              vertailumetodologiasta, datalähteistä ja toimituksellisista
-              periaatteista. Hänen kauppatieteen taustansa Aalto-yliopistosta
-              tuo vertailutoimintaan kvantitatiivisen otteen: jokainen
-              rankkauskriteeri on ennalta määritelty ja dokumentoitu, ja datan
-              tuoreutta seurataan mittareilla.
+              Valitse-verkoston vertailumetodologia päivitetään säännöllisesti.
+              Jokainen rankkauskriteeri on ennalta määritelty ja dokumentoitu,
+              ja datan tuoreutta seurataan mittareilla. Hintatieto kerätään
+              automaattisesti palveluntarjoajien lähteistä, normalisoidaan ja
+              päivitetään vertikaalikohtaisella rytmillä.
             </p>
             <p>
-              Henri on urallaan rakentanut kymmeniä tekoälypohjaisia työkaluja
-              raportointiin, analytiikkaan ja markkinointiin. Tämä osaaminen
-              näkyy verkoston datakäsittelyssä: hintatieto kerätään
-              automaattisesti palveluntarjoajien lähteistä, normalisoidaan
-              ja päivitetään vertikaalikohtaisella rytmillä.
-            </p>
-            <p>
-              Toimituksellinen riippumattomuus on Henrin vastuulla:
-              kaupallinen myynti ja toimituksellinen sisältö on erotettu
-              toisistaan, eikä affiliate-yhteistyö vaikuta vertailutulosten
-              järjestykseen.
+              Toimituksellinen ja kaupallinen toiminto on erotettu toisistaan:
+              affiliate-yhteistyö ei vaikuta vertailutulosten järjestykseen,
+              eikä yksittäisellä yhteistyökumppanilla ole oikeutta tarkistaa
+              tai muuttaa toimituksellista sisältöä ennen sen julkaisua.
             </p>
           </div>
         </section>

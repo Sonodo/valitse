@@ -79,6 +79,17 @@ export default function RootLayout({
     name: SITE_NAME,
     url: SITE_URL,
     description: SITE_DESCRIPTION,
+    parentOrganization: {
+      '@type': 'Organization',
+      name: 'Sonodo',
+      url: SITE_URL,
+      taxID: '2887416-4',
+      identifier: {
+        '@type': 'PropertyValue',
+        propertyID: 'FI Y-tunnus',
+        value: '2887416-4',
+      },
+    },
   };
 
   return (

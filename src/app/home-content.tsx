@@ -200,16 +200,8 @@ const faqItems = [
     a: 'Sähkön spot-hinnat päivittyvät 15 minuutin välein, lainakorot ja vakuutusmaksut päivittäin, kiinteät sähköhinnat ja liittymähinnat viikoittain. Tarkat päivitysrytmit on listattu Toimituksen periaatteet -sivulla.',
   },
   {
-    q: 'Voiko Valitsea käyttää yritykselle?',
-    a: 'Valitse-vertailut on suunniteltu pääosin kuluttajakäyttöön. Yritysasiakkaat voivat hyödyntää vertailusivustoja taustatietona, mutta yritysliittymien ja yrityslainojen erityishinnoittelu on syytä neuvotella suoraan palveluntarjoajan kanssa.',
-  },
-  {
     q: 'Miten valitsen oikean palvelun?',
     a: 'Aloita siitä, mitä haluat vertailla. Sähköön valitsesahko.fi, lainoihin valitselaina.fi, vakuutuksiin valitsevakuutus.fi, liittymiin valitseliittyma.fi. Etusivulta löydät kaikki neljä yhdellä klikkauksella. Lue myös oppaat-osiomme cross-categorical-aiheista.',
-  },
-  {
-    q: 'Toimivatko vertailut koko Suomessa?',
-    a: 'Kyllä. Kaikki Valitse-verkoston vertailut kattavat koko Suomen markkinat. Sähkössä huomioimme paikallisen sähkönsiirtoyhtiön (postinumeropohjaisesti), liittymissä alueelliset peittosaatavuudet, ja vakuutuksissa yhtiöt joilla on sopimukset koko maassa.',
   },
 ];
 
