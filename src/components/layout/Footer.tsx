@@ -111,6 +111,16 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/oppaat" className="text-sm text-slate-400 hover:text-accent-400 transition-colors">
+                  Oppaat
+                </Link>
+              </li>
+              <li>
+                <Link href="/toimituksen-periaatteet" className="text-sm text-slate-400 hover:text-accent-400 transition-colors">
+                  Toimituksen periaatteet
+                </Link>
+              </li>
+              <li>
                 <Link href="/tietosuoja" className="text-sm text-slate-400 hover:text-accent-400 transition-colors">
                   Tietosuojaseloste
                 </Link>

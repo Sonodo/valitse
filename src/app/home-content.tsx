@@ -184,28 +184,32 @@ const valueProps = [
 
 const faqItems = [
   {
-    q: 'Onko Valitse ilmainen?',
-    a: 'Kyllä. Valitse on täysin ilmainen käyttää — ei maksuja, ei rekisteröitymistä, ei sitoumusta.',
+    q: 'Mitä Valitse on?',
+    a: 'Valitse on suomalainen vertailupalveluverkosto, johon kuuluu hub-sivusto valitse.fi ja neljä erikoistunutta vertailusivustoa: Valitse Sähkö, Valitse Laina, Valitse Vakuutus ja Valitse Liittymä. Operaattorina toimii Sonodo (Y-tunnus 2887416-4).',
   },
   {
-    q: 'Miten Valitse eroaa muista vertailupalveluista?',
-    a: 'Valitse kokoaa kahdeksan erikoistunutta vertailupalvelua saman brändin alle. Yhdestä paikasta voit vertailla sähköä, lainoja, vakuutuksia, liittymiä ja paljon muuta. Pyrimme näyttämään kattavasti eri palveluntarjoajat, yhtenäisellä järjestelyperusteella.',
+    q: 'Maksaako vertailu?',
+    a: 'Ei. Valitse on täysin ilmainen käyttää — ei maksuja, ei rekisteröitymistä, ei sitoumusta. Kaikki vertailupalvelut ovat avoimia kaikille.',
   },
   {
-    q: 'Miten vertailutulokset määräytyvät?',
-    a: 'Vertailun järjestys perustuu objektiivisiin kriteereihin: hintaan, ominaisuuksiin ja ajantasaiseen dataan. Sama kriteeristö kaikille tuotteille. Lue tarkemmin Menetelmä-sivulta.',
+    q: 'Miten tienaatte rahaa?',
+    a: 'Affiliate-yhteistyöllä: saamme palkkion, jos käyttäjä siirtyy sivustoltamme yhteistyökumppanin palveluun ja tekee sopimuksen. Tämä ei vaikuta vertailutulosten järjestykseen — kaikki palveluntarjoajat saavat sijoituksensa samojen kriteerien perusteella. Lue tarkemmin Toimituksen periaatteet -sivulta.',
   },
   {
-    q: 'Mitä kaikkea voin vertailla?',
-    a: 'Valitseen kuuluu useita erikoistuneita vertailupalveluita: sähkösopimukset, lainat ja luotot, vakuutukset, puhelinliittymät, kotipalvelut, tarjoukset ja asunnot. Jokaisella palvelulla on oma sivustonsa, joka on erikoistunut kyseiseen aihealueeseen.',
+    q: 'Onko data tuoretta?',
+    a: 'Sähkön spot-hinnat päivittyvät 15 minuutin välein, lainakorot ja vakuutusmaksut päivittäin, kiinteät sähköhinnat ja liittymähinnat viikoittain. Tarkat päivitysrytmit on listattu Toimituksen periaatteet -sivulla.',
   },
   {
-    q: 'Voinko luottaa Valitseen?',
-    a: 'Valitse on suomalainen palvelu. Vertailun järjestys perustuu aina hintaan ja ominaisuuksiin, ja vertailumenetelmämme on avoimesti dokumentoitu Menetelmä-sivulla.',
+    q: 'Voiko Valitsea käyttää yritykselle?',
+    a: 'Valitse-vertailut on suunniteltu pääosin kuluttajakäyttöön. Yritysasiakkaat voivat hyödyntää vertailusivustoja taustatietona, mutta yritysliittymien ja yrityslainojen erityishinnoittelu on syytä neuvotella suoraan palveluntarjoajan kanssa.',
   },
   {
-    q: 'Miten pääsen alkuun?',
-    a: 'Valitse palvelu, jota haluat vertailla, ja seuraa ohjeita. Useimpiin vertailuihin tarvitset vain muutaman perustiedon — tulokset saat muutamassa sekunnissa.',
+    q: 'Miten valitsen oikean palvelun?',
+    a: 'Aloita siitä, mitä haluat vertailla. Sähköön valitsesahko.fi, lainoihin valitselaina.fi, vakuutuksiin valitsevakuutus.fi, liittymiin valitseliittyma.fi. Etusivulta löydät kaikki neljä yhdellä klikkauksella. Lue myös oppaat-osiomme cross-categorical-aiheista.',
+  },
+  {
+    q: 'Toimivatko vertailut koko Suomessa?',
+    a: 'Kyllä. Kaikki Valitse-verkoston vertailut kattavat koko Suomen markkinat. Sähkössä huomioimme paikallisen sähkönsiirtoyhtiön (postinumeropohjaisesti), liittymissä alueelliset peittosaatavuudet, ja vakuutuksissa yhtiöt joilla on sopimukset koko maassa.',
   },
 ];
 
