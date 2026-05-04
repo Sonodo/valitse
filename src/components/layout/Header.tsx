@@ -128,9 +128,6 @@ export function Header() {
                             <div className="min-w-0">
                               <div className="text-sm font-semibold text-slate-900 flex items-center gap-2">
                                 {spoke.name}
-                                {spoke.status === 'coming-soon' && (
-                                  <span className="text-[10px] font-medium px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-700">Tulossa</span>
-                                )}
                               </div>
                               <p className="text-xs text-slate-500 mt-0.5 line-clamp-1">{spoke.description}</p>
                             </div>
@@ -216,9 +213,6 @@ export function Header() {
                       <SpokeIcon iconName={spoke.iconName} size={16} style={{ color: spoke.color }} />
                     </div>
                     <span className="text-sm font-medium text-slate-200">{spoke.name}</span>
-                    {spoke.status === 'coming-soon' && (
-                      <span className="text-[10px] font-medium px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-700 ml-auto">Tulossa</span>
-                    )}
                   </Link>
                 ))}
               </div>

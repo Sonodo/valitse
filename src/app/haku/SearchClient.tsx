@@ -218,10 +218,8 @@ export default function SearchClient() {
                             style={{ color: spoke.color }}
                           />
                         </div>
-                        {spoke.status !== 'live' && (
-                          <Badge variant={spoke.status === 'beta' ? 'warning' : 'coming-soon'}>
-                            {spoke.status === 'beta' ? 'Beta' : 'Tulossa'}
-                          </Badge>
+                        {spoke.status === 'beta' && (
+                          <Badge variant="warning">Beta</Badge>
                         )}
                       </div>
                       <h3 className="font-bold text-slate-900">{spoke.name}</h3>

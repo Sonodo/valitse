@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { SITE_NAME, SITE_URL, SITE_DESCRIPTION, SITE_TAGLINE } from '@/lib/constants';
 import { generateFAQSchema } from '@/lib/seo';
 import HomeContent from './home-content';
+import { SiteDisclosureBar } from '@/components/disclosure';
 
 export const metadata: Metadata = {
   title: `${SITE_NAME} — ${SITE_TAGLINE}`,
@@ -59,6 +60,7 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <SiteDisclosureBar />
       <HomeContent />
     </>
   );

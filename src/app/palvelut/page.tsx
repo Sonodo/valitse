@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { CheckCircle, ArrowRight, ExternalLink, Clock } from 'lucide-react';
+import { CheckCircle, ArrowRight, ExternalLink } from 'lucide-react';
 import { spokes } from '@/data/spokes';
 import { SITE_NAME, SITE_URL } from '@/lib/constants';
 import { generateBreadcrumbSchema } from '@/lib/seo';
@@ -72,12 +72,6 @@ export default function PalvelutPage() {
                       <span className="text-sm text-slate-500">{spoke.verticalFi}</span>
                     </div>
                   </div>
-                  {spoke.status === 'coming-soon' && (
-                    <Badge variant="warning">
-                      <Clock className="h-3 w-3" />
-                      Tulossa pian
-                    </Badge>
-                  )}
                   {spoke.status === 'beta' && (
                     <Badge variant="warning">Beta</Badge>
                   )}

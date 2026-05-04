@@ -140,7 +140,7 @@ export default async function OpasPage({
                   Sonodo (Valitse-verkoston operaattori)
                 </span>
                 <span>
-                  Päivitetty{' '}
+                  Tarkistettu{' '}
                   {new Date(guide.updatedAt).toLocaleDateString('fi-FI')}
                 </span>
               </div>
