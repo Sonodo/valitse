@@ -3,13 +3,13 @@ import Link from 'next/link';
 import { SITE_NAME, SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Luotettavuus ja rahoitus — näin Valitse-verkosto ansaitsee rahaa',
+  title: 'Sivuston ansainta — näin Valitse-verkosto ansaitsee rahaa',
   description: `Miten ${SITE_NAME}-verkosto valitsee tarjoajat, järjestää tarjoukset ja ansaitsee rahaa. Avoin selvitys palkkioista ja siitä mitä emme tee verkostotason linjana.`,
-  alternates: { canonical: `${SITE_URL}/luotettavuus` },
+  alternates: { canonical: `${SITE_URL}/sivuston-ansainta` },
   robots: { index: true, follow: true },
 };
 
-export default function LuotettavuusPage() {
+export default function SivustonAnsaintaPage() {
   return (
     <div className="bg-slate-50 py-12 sm:py-16">
       <article className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
@@ -18,7 +18,7 @@ export default function LuotettavuusPage() {
             Verkostotason linja
           </p>
           <h1 className="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">
-            Luotettavuus ja rahoitus
+            Sivuston ansainta
           </h1>
           <p className="mt-4 text-lg leading-relaxed text-slate-600">
             {SITE_NAME} on suomalaisten vertailupalvelujen verkosto. Tämä sivu
@@ -56,16 +56,19 @@ export default function LuotettavuusPage() {
             <li className="flex gap-2">
               <span className="text-emerald-600">✓</span>
               <span>
-                <strong>Yhtenäinen merkintätapa.</strong> Kumppanitarjoukset on
-                merkitty pillillä &quot;Kumppanitarjous&quot;, muut
-                &quot;Markkinahinta&quot; — sama logiikka jokaisella sivulla.
+                <strong>Yhtenäinen ulkoasu.</strong> Kumppani- ja
+                ei-kumppanitarjoukset näkyvät vertailussa identtisesti — sama
+                ulkoasu, sama järjestyslogiikka. Kumppanilinkit merkitään
+                hakukoneille teknisellä rel=&quot;sponsored&quot; -määreellä,
+                mutta käyttäjälle näkyvä kortti ei poikkea.
               </span>
             </li>
             <li className="flex gap-2">
               <span className="text-emerald-600">✓</span>
               <span>
                 <strong>Avoin algoritmi.</strong> Kunkin spoken
-                järjestysalgoritmi on kuvattu spoken omalla luotettavuus-sivulla.
+                järjestysalgoritmi on kuvattu spoken omalla
+                Sivuston ansainta -sivulla.
               </span>
             </li>
           </ul>
@@ -87,7 +90,7 @@ export default function LuotettavuusPage() {
         </section>
 
         <section className="mb-10 rounded-xl bg-white p-6 shadow-sm">
-          <h2 className="text-xl font-bold text-slate-900">Vertikaalikohtaiset luotettavuus-sivut</h2>
+          <h2 className="text-xl font-bold text-slate-900">Vertikaalikohtaiset Sivuston ansainta -sivut</h2>
           <p className="mt-3 text-slate-700 leading-relaxed">
             Kukin spoke julkaisee oman, syvällisemmän kuvauksen
             järjestysalgoritmistaan, mukana olevista ja pois jätetyistä
@@ -96,42 +99,42 @@ export default function LuotettavuusPage() {
           <ul className="mt-4 space-y-2 text-slate-700">
             <li>
               <a
-                href="https://valitsesahko.fi/luotettavuus"
+                href="https://valitsesahko.fi/sivuston-ansainta"
                 className="text-[#0891B2] underline hover:text-[#0891B2]/80"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Valitse Sähkö — luotettavuus →
+                Valitse Sähkö — Lue lisää →
               </a>
             </li>
             <li>
               <a
-                href="https://valitselaina.fi/luotettavuus"
+                href="https://valitselaina.fi/sivuston-ansainta"
                 className="text-[#0891B2] underline hover:text-[#0891B2]/80"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Valitse Laina — luotettavuus →
+                Valitse Laina — Lue lisää →
               </a>
             </li>
             <li>
               <a
-                href="https://valitsevakuutus.fi/luotettavuus"
+                href="https://valitsevakuutus.fi/sivuston-ansainta"
                 className="text-[#0891B2] underline hover:text-[#0891B2]/80"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Valitse Vakuutus — luotettavuus →
+                Valitse Vakuutus — Lue lisää →
               </a>
             </li>
             <li>
               <a
-                href="https://valitseliittyma.fi/luotettavuus"
+                href="https://valitseliittyma.fi/sivuston-ansainta"
                 className="text-[#0891B2] underline hover:text-[#0891B2]/80"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Valitse Liittymä — luotettavuus →
+                Valitse Liittymä — Lue lisää →
               </a>
             </li>
           </ul>
